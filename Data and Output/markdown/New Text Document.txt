@@ -1,0 +1,119 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 99 tests passed:
+   - test_generated_mutants [0.37390 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR source_to_mutate: [0.27176 s] killed by test_generated_mutants.py::test_h1_header
+   - [#   2] AOR source_to_mutate: [0.18302 s] incompetent
+   - [#   3] AOR source_to_mutate: [0.18367 s] killed by test_generated_mutants.py::test_h1_header
+   - [#   4] AOR source_to_mutate: [0.20157 s] incompetent
+   - [#   5] AOR source_to_mutate: [0.20966 s] incompetent
+   - [#   6] AOR source_to_mutate: [0.19908 s] incompetent
+   - [#   7] AOR source_to_mutate: [0.18730 s] incompetent
+   - [#   8] AOR source_to_mutate: [0.21099 s] incompetent
+   - [#   9] AOR source_to_mutate: [0.17577 s] incompetent
+   - [#  10] AOR source_to_mutate: [0.20367 s] incompetent
+   - [#  11] ASR source_to_mutate: [0.18164 s] incompetent
+   - [#  12] ASR source_to_mutate: [0.25369 s] incompetent
+   - [#  13] COD source_to_mutate: [0.18098 s] killed by test_generated_mutants.py::test_unordered_list_single_item
+   - [#  14] COD source_to_mutate: [0.23228 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  15] COI source_to_mutate: [0.21109 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  16] COI source_to_mutate: [0.30783 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  17] COI source_to_mutate: [0.25674 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  18] COI source_to_mutate: [0.25126 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  19] COI source_to_mutate: [0.17729 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  20] COI source_to_mutate: [0.20022 s] killed by test_generated_mutants.py::test_unordered_list_single_item
+   - [#  21] COI source_to_mutate: [0.19176 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  22] COI source_to_mutate: [0.17024 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  23] COI source_to_mutate: [0.17439 s] killed by test_generated_mutants.py::test_unordered_list_single_item
+   - [#  24] COI source_to_mutate: [0.23152 s] incompetent
+   - [#  25] COI source_to_mutate: [0.18752 s] incompetent
+   - [#  26] COI source_to_mutate: [0.16312 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  27] CRP source_to_mutate: [0.17968 s] killed by test_generated_mutants.py::test_unordered_list_multiple_items
+   - [#  28] CRP source_to_mutate: [0.17602 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  29] CRP source_to_mutate: [0.17038 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  30] CRP source_to_mutate: [0.18532 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  31] CRP source_to_mutate: [0.16379 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  32] CRP source_to_mutate: [0.16767 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  33] CRP source_to_mutate: [0.18983 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  34] CRP source_to_mutate: [0.20339 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  35] CRP source_to_mutate: [0.21126 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  36] CRP source_to_mutate: [0.18811 s] killed by test_generated_mutants.py::test_unordered_list_single_item
+   - [#  37] CRP source_to_mutate: [0.20301 s] killed by test_generated_mutants.py::test_unordered_list_single_item
+   - [#  38] CRP source_to_mutate: [0.16772 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  39] CRP source_to_mutate: [0.17452 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  40] CRP source_to_mutate: [0.18214 s] killed by test_generated_mutants.py::test_h1_header
+   - [#  41] CRP source_to_mutate: [0.17512 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  42] CRP source_to_mutate: [0.23632 s] killed by test_generated_mutants.py::test_header_level_7
+   - [#  43] CRP source_to_mutate: [0.20273 s] killed by test_generated_mutants.py::test_h1_header
+   - [#  44] CRP source_to_mutate: [0.19100 s] killed by test_generated_mutants.py::test_h1_header
+   - [#  45] CRP source_to_mutate: [0.16910 s] killed by test_generated_mutants.py::test_h1_header
+   - [#  46] CRP source_to_mutate: [0.16972 s] killed by test_generated_mutants.py::test_h1_header
+   - [#  47] CRP source_to_mutate: [0.16756 s] killed by test_generated_mutants.py::test_h2_header
+   - [#  48] CRP source_to_mutate: [0.17719 s] killed by test_generated_mutants.py::test_h2_header
+   - [#  49] CRP source_to_mutate: [0.19396 s] killed by test_generated_mutants.py::test_bold_text
+   - [#  50] CRP source_to_mutate: [0.17363 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  51] CRP source_to_mutate: [0.18576 s] killed by test_generated_mutants.py::test_bold_text
+   - [#  52] CRP source_to_mutate: [0.17246 s] killed by test_generated_mutants.py::test_bold_text
+   - [#  53] CRP source_to_mutate: [0.17243 s] killed by test_generated_mutants.py::test_bold_text
+   - [#  54] CRP source_to_mutate: [0.20201 s] killed by test_generated_mutants.py::test_bold_text
+   - [#  55] CRP source_to_mutate: [0.17701 s] killed by test_generated_mutants.py::test_bold_text
+   - [#  56] CRP source_to_mutate: [0.17795 s] killed by test_generated_mutants.py::test_italic_text
+   - [#  57] CRP source_to_mutate: [0.17298 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  58] CRP source_to_mutate: [0.18104 s] killed by test_generated_mutants.py::test_italic_text
+   - [#  59] CRP source_to_mutate: [0.19197 s] killed by test_generated_mutants.py::test_italic_text
+   - [#  60] CRP source_to_mutate: [0.20031 s] killed by test_generated_mutants.py::test_italic_text
+   - [#  61] CRP source_to_mutate: [0.19184 s] killed by test_generated_mutants.py::test_italic_text
+   - [#  62] CRP source_to_mutate: [0.19313 s] killed by test_generated_mutants.py::test_italic_text
+   - [#  63] CRP source_to_mutate: [0.20866 s] killed by test_generated_mutants.py::test_unordered_list_single_item
+   - [#  64] CRP source_to_mutate: [0.20244 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  65] CRP source_to_mutate: [0.19281 s] killed by test_generated_mutants.py::test_unordered_list_single_item
+   - [#  66] CRP source_to_mutate: [0.19523 s] killed by test_generated_mutants.py::test_unordered_list_single_item
+   - [#  67] CRP source_to_mutate: [0.17946 s] killed by test_generated_mutants.py::test_unordered_list_single_item
+   - [#  68] CRP source_to_mutate: [0.17193 s] killed by test_generated_mutants.py::test_unordered_list_single_item
+   - [#  69] CRP source_to_mutate: [0.19375 s] killed by test_generated_mutants.py::test_unordered_list_single_item
+   - [#  70] CRP source_to_mutate: [0.17733 s] killed by test_generated_mutants.py::test_unordered_list_multiple_items
+   - [#  71] CRP source_to_mutate: [0.18098 s] killed by test_generated_mutants.py::test_unordered_list_multiple_items
+   - [#  72] CRP source_to_mutate: [0.16992 s] killed by test_generated_mutants.py::test_unordered_list_multiple_items
+   - [#  73] CRP source_to_mutate: [0.16390 s] killed by test_generated_mutants.py::test_h1_header
+   - [#  74] CRP source_to_mutate: [0.20299 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  75] CRP source_to_mutate: [0.17428 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  76] CRP source_to_mutate: [0.16387 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  77] CRP source_to_mutate: [0.23799 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  78] CRP source_to_mutate: [0.22546 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  79] CRP source_to_mutate: [0.23269 s] killed by test_generated_mutants.py::test_html_tags_in_list
+   - [#  80] CRP source_to_mutate: [0.22664 s] killed by test_generated_mutants.py::test_html_tags_in_list
+   - [#  81] CRP source_to_mutate: [0.17581 s] killed by test_generated_mutants.py::test_paragraph_after_list
+   - [#  82] CRP source_to_mutate: [0.19791 s] killed by test_generated_mutants.py::test_paragraph_after_list
+   - [#  83] CRP source_to_mutate: [0.18786 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  84] CRP source_to_mutate: [0.20461 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  85] CRP source_to_mutate: [0.28686 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  86] CRP source_to_mutate: [0.20923 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  87] CRP source_to_mutate: [0.22157 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  88] CRP source_to_mutate: [0.16988 s] killed by test_generated_mutants.py::test_empty_markdown
+   - [#  89] SIR source_to_mutate: [0.22249 s] killed by test_generated_mutants.py::test_h1_header
+[*] Mutation score [18.14484 s]: 100.0%
+   - all: 89
+   - killed: 77 (86.5%)
+   - survived: 0 (0.0%)
+   - incompetent: 12 (13.5%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      58      0     28      0   100%
+-----------------------------------------------------------------
+TOTAL                    58      0     28      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 100.00%

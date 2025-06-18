@@ -1,0 +1,66 @@
+[*] Start mutants generation and execution:
+   - [#   1] AOD source_to_mutate:    - [#   2] AOD source_to_mutate:    - [#   3] AOR source_to_mutate: [0.40223 s] incompetent
+   - [#   4] AOR source_to_mutate: [0.16962 s] incompetent
+   - [#   5] AOR source_to_mutate: [0.15695 s] incompetent
+   - [#   6] AOR source_to_mutate: [0.15668 s] killed by test_generated_mutants.py::test_positive_target
+   - [#   7] AOR source_to_mutate: [0.50991 s] incompetent
+   - [#   8] AOR source_to_mutate: [0.18595 s] incompetent
+   - [#   9] AOR source_to_mutate: [0.30842 s] incompetent
+   - [#  10] AOR source_to_mutate: [0.20740 s] killed by test_generated_mutants.py::test_positive_target
+   - [#  11] AOR source_to_mutate:    - [#  12] AOR source_to_mutate: [0.32600 s] killed by test_generated_mutants.py::test_positive_target
+   - [#  13] AOR source_to_mutate: [0.29435 s] killed by test_generated_mutants.py::test_positive_target
+   - [#  14] AOR source_to_mutate: [0.15520 s] killed by test_generated_mutants.py::test_positive_target
+   - [#  15] AOR source_to_mutate: [0.16468 s] killed by test_generated_mutants.py::test_positive_target
+   - [#  16] AOR source_to_mutate:    - [#  17] AOR source_to_mutate: [0.42505 s] killed by test_generated_mutants.py::test_positive_target
+   - [#  18] COI source_to_mutate: [0.15139 s] killed by test_generated_mutants.py::test_positive_target
+   - [#  19] COI source_to_mutate: [0.15469 s] killed by test_generated_mutants.py::test_positive_target
+   - [#  20] COI source_to_mutate: [0.17112 s] killed by test_generated_mutants.py::test_positive_target
+   - [#  21] COI source_to_mutate: [0.16027 s] killed by test_generated_mutants.py::test_positive_target
+   - [#  22] COI source_to_mutate: [0.16342 s] killed by test_generated_mutants.py::test_positive_target
+   - [#  23] CRP source_to_mutate: [0.17296 s] killed by test_generated_mutants.py::test_target_zero
+   - [#  24] CRP source_to_mutate: [0.18061 s] killed by test_generated_mutants.py::test_negative_target
+   - [#  25] CRP source_to_mutate: [0.17042 s] killed by test_generated_mutants.py::test_negative_target
+   - [#  26] CRP source_to_mutate: [0.17816 s] killed by test_generated_mutants.py::test_no_solution
+   - [#  27] CRP source_to_mutate: [0.17733 s] survived
+   - [#  28] CRP source_to_mutate: [0.16615 s] survived
+   - [#  29] CRP source_to_mutate: [0.18264 s] survived
+   - [#  30] CRP source_to_mutate: [0.15279 s] killed by test_generated_mutants.py::test_positive_target
+   - [#  31] CRP source_to_mutate: [0.16197 s] survived
+   - [#  32] CRP source_to_mutate:    - [#  33] CRP source_to_mutate:    - [#  34] CRP source_to_mutate: [0.54614 s] killed by test_generated_mutants.py::test_single_coin
+   - [#  35] CRP source_to_mutate: [0.17015 s] killed by test_generated_mutants.py::test_positive_target
+   - [#  36] CRP source_to_mutate: [0.18453 s] survived
+   - [#  37] CRP source_to_mutate: [0.22020 s] killed by test_generated_mutants.py::test_no_solution
+   - [#  38] CRP source_to_mutate: [0.29206 s] killed by test_generated_mutants.py::test_no_solution
+   - [#  39] CRP source_to_mutate: [0.32248 s] killed by test_generated_mutants.py::test_no_solution
+   - [#  40] CRP source_to_mutate:    - [#  41] ROR source_to_mutate: [0.25234 s] killed by test_generated_mutants.py::test_positive_target
+   - [#  42] ROR source_to_mutate: [0.15344 s] killed by test_generated_mutants.py::test_target_zero
+   - [#  43] ROR source_to_mutate: [0.16632 s] killed by test_generated_mutants.py::test_positive_target
+   - [#  44] ROR source_to_mutate: [0.16466 s] killed by test_generated_mutants.py::test_positive_target
+   - [#  45] ROR source_to_mutate: [0.34393 s] killed by test_generated_mutants.py::test_positive_target
+   - [#  46] ROR source_to_mutate: [0.15411 s] killed by test_generated_mutants.py::test_positive_target
+   - [#  47] ROR source_to_mutate: [0.16812 s] killed by test_generated_mutants.py::test_positive_target
+   - [#  48] ROR source_to_mutate: [0.24057 s] killed by test_generated_mutants.py::test_positive_target
+[*] Mutation score [45.09725 s]: 88.1%
+   - all: 48
+   - killed: 30 (62.5%)
+   - survived: 5 (10.4%)
+   - incompetent: 6 (12.5%)
+   - timeout: 7 (14.6%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      24      0     14      0   100%
+-----------------------------------------------------------------
+TOTAL                    24      0     14      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 88.10%

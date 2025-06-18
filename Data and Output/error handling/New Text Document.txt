@@ -1,0 +1,38 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 11 tests passed:
+   - test_generated_mutants [0.32555 s]
+[*] Start mutants generation and execution:
+   - [#   1] CRP source_to_mutate: [0.32510 s] killed by test_generated_mutants.py::test_handle_error_by_throwing_exception
+   - [#   2] CRP source_to_mutate: [0.19029 s] killed by test_generated_mutants.py::test_handle_error_by_throwing_exception
+   - [#   3] EHD source_to_mutate: [0.16427 s] killed by test_generated_mutants.py::test_handle_error_by_returning_none_invalid_input
+   - [#   4] EHD source_to_mutate: [0.16742 s] killed by test_generated_mutants.py::test_handle_error_by_returning_tuple_invalid_input
+   - [#   5] EXS source_to_mutate: [0.16666 s] survived
+   - [#   6] EXS source_to_mutate: [0.15819 s] killed by test_generated_mutants.py::test_handle_error_by_returning_tuple_invalid_input
+[*] Mutation score [1.56175 s]: 83.3%
+   - all: 6
+   - killed: 5 (83.3%)
+   - survived: 1 (16.7%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      15      0      0      0   100%
+-----------------------------------------------------------------
+TOTAL                    15      0      0      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 83.30%
+
+--- Analysis Finished ---

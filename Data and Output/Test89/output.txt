@@ -1,0 +1,39 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 14 tests passed:
+   - test_generated_mutants [0.11769 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR source_to_mutate: [0.17429 s] killed by test_generated_mutants.py::test_encrypt_single_letter
+   - [#   2] AOR source_to_mutate: [0.08501 s] incompetent
+   - [#   3] AOR source_to_mutate: [0.07972 s] killed by test_generated_mutants.py::test_encrypt_single_letter
+   - [#   4] AOR source_to_mutate: [0.08455 s] survived
+   - [#   5] AOR source_to_mutate: [0.08084 s] killed by test_generated_mutants.py::test_encrypt_single_letter
+   - [#   6] ASR source_to_mutate: [0.11031 s] incompetent
+   - [#   7] ASR source_to_mutate: [0.08602 s] incompetent
+   - [#   8] COI source_to_mutate: [0.10198 s] killed by test_generated_mutants.py::test_encrypt_single_letter
+   - [#   9] COI source_to_mutate: [0.10103 s] killed by test_generated_mutants.py::test_encrypt_single_letter
+[*] Mutation score [1.06383 s]: 83.3%
+   - all: 9
+   - killed: 5 (55.6%)
+   - survived: 1 (11.1%)
+   - incompetent: 3 (33.3%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py       8      0      4      0   100%
+-----------------------------------------------------------------
+TOTAL                     8      0      4      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 83.30%

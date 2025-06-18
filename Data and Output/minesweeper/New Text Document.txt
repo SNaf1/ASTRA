@@ -1,0 +1,91 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 28 tests passed:
+   - test_generated_mutants [0.25140 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR source_to_mutate: [0.25788 s] killed by test_generated_mutants.py::test_two_by_two_board_one_mine
+   - [#   2] AOR source_to_mutate: [0.17380 s] killed by test_generated_mutants.py::test_two_by_two_board_one_mine
+   - [#   3] AOR source_to_mutate: [0.15747 s] killed by test_generated_mutants.py::test_two_by_two_board_one_mine
+   - [#   4] AOR source_to_mutate: [0.16022 s] killed by test_generated_mutants.py::test_two_by_two_board_no_mines
+   - [#   5] AOR source_to_mutate: [0.16408 s] killed by test_generated_mutants.py::test_one_by_one_board_no_mines
+   - [#   6] AOR source_to_mutate: [0.16687 s] killed by test_generated_mutants.py::test_three_by_three_board_one_mine_top_left
+   - [#   7] AOR source_to_mutate: [0.18118 s] incompetent
+   - [#   8] ASR source_to_mutate: [0.17128 s] killed by test_generated_mutants.py::test_two_by_two_board_one_mine
+   - [#   9] ASR source_to_mutate: [0.17111 s] killed by test_generated_mutants.py::test_three_by_three_board_one_mine_center
+   - [#  10] BCR source_to_mutate: [0.16947 s] killed by test_generated_mutants.py::test_two_by_two_board_one_mine
+   - [#  11] BCR source_to_mutate: [0.19310 s] killed by test_generated_mutants.py::test_three_by_three_board_one_mine_bottom_right
+   - [#  12] COD source_to_mutate: [0.16034 s] killed by test_generated_mutants.py::test_empty_board
+   - [#  13] COD source_to_mutate: [0.18013 s] killed by test_generated_mutants.py::test_one_by_one_board_no_mines
+   - [#  14] COI source_to_mutate: [0.16903 s] killed by test_generated_mutants.py::test_empty_board
+   - [#  15] COI source_to_mutate: [0.16602 s] killed by test_generated_mutants.py::test_one_by_one_board_with_mine
+   - [#  16] COI source_to_mutate: [0.17080 s] killed by test_generated_mutants.py::test_two_by_two_board_one_mine
+   - [#  17] COI source_to_mutate: [0.18222 s] killed by test_generated_mutants.py::test_one_by_one_board_no_mines
+   - [#  18] COI source_to_mutate: [0.16561 s] killed by test_generated_mutants.py::test_one_by_one_board_no_mines
+   - [#  19] COI source_to_mutate: [0.17724 s] killed by test_generated_mutants.py::test_one_by_one_board_no_mines
+   - [#  20] COI source_to_mutate: [0.16281 s] killed by test_generated_mutants.py::test_one_by_one_board_no_mines
+   - [#  21] CRP source_to_mutate: [0.15633 s] killed by test_generated_mutants.py::test_one_by_one_board_no_mines
+   - [#  22] CRP source_to_mutate: [0.16472 s] killed by test_generated_mutants.py::test_two_by_two_board_one_mine
+   - [#  23] CRP source_to_mutate: [0.20984 s] killed by test_generated_mutants.py::test_two_by_two_board_one_mine
+   - [#  24] CRP source_to_mutate: [0.16018 s] killed by test_generated_mutants.py::test_three_by_three_board_one_mine_top_left
+   - [#  25] CRP source_to_mutate: [0.18257 s] killed by test_generated_mutants.py::test_two_by_two_board_one_mine
+   - [#  26] CRP source_to_mutate: [0.17503 s] killed by test_generated_mutants.py::test_three_by_three_board_one_mine_bottom_right
+   - [#  27] CRP source_to_mutate: [0.17937 s] survived
+   - [#  28] CRP source_to_mutate: [0.16443 s] killed by test_generated_mutants.py::test_two_by_two_board_one_mine
+   - [#  29] CRP source_to_mutate: [0.15914 s] killed by test_generated_mutants.py::test_one_by_one_board_no_mines
+   - [#  30] CRP source_to_mutate: [0.16646 s] killed by test_generated_mutants.py::test_two_by_two_board_one_mine
+   - [#  31] CRP source_to_mutate: [0.18646 s] killed by test_generated_mutants.py::test_two_by_two_board_one_mine
+   - [#  32] CRP source_to_mutate: [0.15695 s] killed by test_generated_mutants.py::test_two_by_two_board_one_mine
+   - [#  33] CRP source_to_mutate: [0.15698 s] killed by test_generated_mutants.py::test_two_by_two_board_no_mines
+   - [#  34] CRP source_to_mutate: [0.16326 s] killed by test_generated_mutants.py::test_three_by_three_board_one_mine_bottom_right
+   - [#  35] CRP source_to_mutate: [0.16202 s] killed by test_generated_mutants.py::test_two_by_two_board_no_mines
+   - [#  36] CRP source_to_mutate: [0.17201 s] killed by test_generated_mutants.py::test_three_by_three_board_one_mine_center
+   - [#  37] CRP source_to_mutate: [0.19133 s] killed by test_generated_mutants.py::test_two_by_two_board_no_mines
+   - [#  38] CRP source_to_mutate: [0.16527 s] killed by test_generated_mutants.py::test_one_by_one_board_no_mines
+   - [#  39] CRP source_to_mutate: [0.16915 s] killed by test_generated_mutants.py::test_two_by_two_board_no_mines
+   - [#  40] CRP source_to_mutate: [0.15507 s] killed by test_generated_mutants.py::test_one_by_one_board_no_mines
+   - [#  41] CRP source_to_mutate: [0.17091 s] killed by test_generated_mutants.py::test_verify_board_invalid_board_different_row_lengths
+   - [#  42] CRP source_to_mutate: [0.18247 s] killed by test_generated_mutants.py::test_verify_board_invalid_board_different_row_lengths
+   - [#  43] CRP source_to_mutate: [0.18718 s] killed by test_generated_mutants.py::test_one_by_one_board_no_mines
+   - [#  44] CRP source_to_mutate: [0.17632 s] killed by test_generated_mutants.py::test_one_by_one_board_no_mines
+   - [#  45] CRP source_to_mutate: [0.17316 s] killed by test_generated_mutants.py::test_verify_board_invalid_board_unknown_character
+   - [#  46] CRP source_to_mutate: [0.18881 s] killed by test_generated_mutants.py::test_verify_board_invalid_board_unknown_character
+   - [#  47] ROR source_to_mutate: [0.16079 s] killed by test_generated_mutants.py::test_one_by_one_board_with_mine
+   - [#  48] ROR source_to_mutate: [0.17491 s] killed by test_generated_mutants.py::test_two_by_two_board_one_mine
+   - [#  49] ROR source_to_mutate: [0.18634 s] killed by test_generated_mutants.py::test_three_by_three_board_one_mine_bottom_right
+   - [#  50] ROR source_to_mutate: [0.17240 s] killed by test_generated_mutants.py::test_three_by_three_board_one_mine_center
+   - [#  51] ROR source_to_mutate: [0.17561 s] killed by test_generated_mutants.py::test_one_by_one_board_no_mines
+   - [#  52] ROR source_to_mutate: [0.16109 s] killed by test_generated_mutants.py::test_one_by_one_board_no_mines
+   - [#  53] ROR source_to_mutate: [0.15505 s] killed by test_generated_mutants.py::test_one_by_one_board_no_mines
+   - [#  54] SIR source_to_mutate: [0.15969 s] killed by test_generated_mutants.py::test_three_by_three_board_one_mine_top_left
+   - [#  55] SIR source_to_mutate: [0.19105 s] killed by test_generated_mutants.py::test_three_by_three_board_one_mine_bottom_right
+   - [#  56] SIR source_to_mutate: [0.16163 s] killed by test_generated_mutants.py::test_three_by_three_board_one_mine_top_left
+   - [#  57] SIR source_to_mutate: [0.17435 s] killed by test_generated_mutants.py::test_four_by_four_board_complex
+   - [#  58] SIR source_to_mutate: [0.20254 s] killed by test_generated_mutants.py::test_annotate_board_with_mines_and_spaces
+   - [#  59] SIR source_to_mutate: [0.17222 s] killed by test_generated_mutants.py::test_three_by_three_board_one_mine_bottom_right
+[*] Mutation score [10.70812 s]: 98.3%
+   - all: 59
+   - killed: 57 (96.6%)
+   - survived: 1 (1.7%)
+   - incompetent: 1 (1.7%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      31      0     20      0   100%
+-----------------------------------------------------------------
+TOTAL                    31      0     20      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 98.30%
+
+--- Analysis Finished ---

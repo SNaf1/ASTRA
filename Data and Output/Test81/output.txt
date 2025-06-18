@@ -1,0 +1,65 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 27 tests passed:
+   - test_generated_mutants [0.13910 s]
+[*] Start mutants generation and execution:
+   - [#   1] COI source_to_mutate: [0.18442 s] killed by test_generated_mutants.py::test_single_a_plus
+   - [#   2] COI source_to_mutate: [0.09441 s] killed by test_generated_mutants.py::test_single_a
+   - [#   3] COI source_to_mutate: [0.09559 s] killed by test_generated_mutants.py::test_single_a_minus
+   - [#   4] COI source_to_mutate: [0.10253 s] killed by test_generated_mutants.py::test_single_b_plus
+   - [#   5] COI source_to_mutate: [0.09966 s] killed by test_generated_mutants.py::test_single_b
+   - [#   6] COI source_to_mutate: [0.09631 s] killed by test_generated_mutants.py::test_single_b_minus
+   - [#   7] COI source_to_mutate: [0.09647 s] killed by test_generated_mutants.py::test_single_c_plus
+   - [#   8] COI source_to_mutate: [0.09985 s] killed by test_generated_mutants.py::test_single_c
+   - [#   9] COI source_to_mutate: [0.09721 s] killed by test_generated_mutants.py::test_single_c_minus
+   - [#  10] COI source_to_mutate: [0.09840 s] killed by test_generated_mutants.py::test_single_d_plus
+   - [#  11] COI source_to_mutate: [0.09829 s] killed by test_generated_mutants.py::test_single_d
+   - [#  12] COI source_to_mutate: [0.10589 s] killed by test_generated_mutants.py::test_single_d_minus
+   - [#  13] ROR source_to_mutate: [0.09372 s] killed by test_generated_mutants.py::test_single_a_plus
+   - [#  14] ROR source_to_mutate: [0.09384 s] killed by test_generated_mutants.py::test_single_a
+   - [#  15] ROR source_to_mutate: [0.10446 s] killed by test_generated_mutants.py::test_gpa_equal_to_3_7
+   - [#  16] ROR source_to_mutate: [0.08999 s] killed by test_generated_mutants.py::test_single_a_minus
+   - [#  17] ROR source_to_mutate: [0.10186 s] killed by test_generated_mutants.py::test_gpa_equal_to_3_3
+   - [#  18] ROR source_to_mutate: [0.09495 s] killed by test_generated_mutants.py::test_single_b_plus
+   - [#  19] ROR source_to_mutate: [0.10447 s] killed by test_generated_mutants.py::test_example_grades
+   - [#  20] ROR source_to_mutate: [0.09498 s] killed by test_generated_mutants.py::test_single_b
+   - [#  21] ROR source_to_mutate: [0.10490 s] killed by test_generated_mutants.py::test_gpa_equal_to_2_7
+   - [#  22] ROR source_to_mutate: [0.09645 s] killed by test_generated_mutants.py::test_single_b_minus
+   - [#  23] ROR source_to_mutate: [0.10518 s] killed by test_generated_mutants.py::test_gpa_equal_to_2_3
+   - [#  24] ROR source_to_mutate: [0.09626 s] killed by test_generated_mutants.py::test_single_c_plus
+   - [#  25] ROR source_to_mutate: [0.10427 s] killed by test_generated_mutants.py::test_example_grades
+   - [#  26] ROR source_to_mutate: [0.09884 s] killed by test_generated_mutants.py::test_single_c
+   - [#  27] ROR source_to_mutate: [0.10024 s] killed by test_generated_mutants.py::test_example_grades
+   - [#  28] ROR source_to_mutate: [0.09405 s] killed by test_generated_mutants.py::test_single_c_minus
+   - [#  29] ROR source_to_mutate: [0.10457 s] killed by test_generated_mutants.py::test_gpa_equal_to_1_3
+   - [#  30] ROR source_to_mutate: [0.11614 s] killed by test_generated_mutants.py::test_single_d_plus
+   - [#  31] ROR source_to_mutate: [0.11022 s] killed by test_generated_mutants.py::test_gpa_equal_to_1_0
+   - [#  32] ROR source_to_mutate: [0.09893 s] killed by test_generated_mutants.py::test_single_d
+   - [#  33] ROR source_to_mutate: [0.11234 s] killed by test_generated_mutants.py::test_gpa_equal_to_0_7
+   - [#  34] ROR source_to_mutate: [0.10389 s] killed by test_generated_mutants.py::test_single_d_minus
+   - [#  35] ROR source_to_mutate: [0.09887 s] killed by test_generated_mutants.py::test_single_e
+[*] Mutation score [3.83265 s]: 100.0%
+   - all: 35
+   - killed: 35 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      29      0     26      0   100%
+-----------------------------------------------------------------
+TOTAL                    29      0     26      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 100.00%

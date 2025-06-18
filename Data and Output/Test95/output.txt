@@ -1,0 +1,53 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 16 tests passed:
+   - test_generated_mutants [0.11504 s]
+[*] Start mutants generation and execution:
+   - [#   1] BCR source_to_mutate: [0.00000 s] incompetent
+   - [#   2] BCR source_to_mutate: [0.00000 s] incompetent
+   - [#   3] BCR source_to_mutate: [0.00000 s] incompetent
+   - [#   4] BCR source_to_mutate: [0.00000 s] incompetent
+   - [#   5] COD source_to_mutate: [0.17883 s] killed by test_generated_mutants.py::test_all_upper_case
+   - [#   6] COD source_to_mutate: [0.08580 s] killed by test_generated_mutants.py::test_all_lower_case
+   - [#   7] COI source_to_mutate: [0.08508 s] killed by test_generated_mutants.py::test_all_lower_case
+   - [#   8] COI source_to_mutate: [0.08008 s] killed by test_generated_mutants.py::test_all_lower_case
+   - [#   9] COI source_to_mutate: [0.07849 s] killed by test_generated_mutants.py::test_all_lower_case
+   - [#  10] COI source_to_mutate: [0.07942 s] killed by test_generated_mutants.py::test_all_lower_case
+   - [#  11] COI source_to_mutate: [0.08202 s] killed by test_generated_mutants.py::test_all_lower_case
+   - [#  12] COI source_to_mutate: [0.08040 s] killed by test_generated_mutants.py::test_all_lower_case
+   - [#  13] LCR source_to_mutate: [0.08041 s] killed by test_generated_mutants.py::test_mixed_case
+   - [#  14] LCR source_to_mutate: [0.08275 s] killed by test_generated_mutants.py::test_all_lower_case
+   - [#  15] LCR source_to_mutate: [0.07983 s] killed by test_generated_mutants.py::test_all_lower_case
+   - [#  16] LCR source_to_mutate: [0.07498 s] killed by test_generated_mutants.py::test_all_lower_case
+   - [#  17] ROR source_to_mutate: [0.07618 s] killed by test_generated_mutants.py::test_all_lower_case
+   - [#  18] ROR source_to_mutate: [0.07631 s] killed by test_generated_mutants.py::test_all_lower_case
+   - [#  19] ROR source_to_mutate: [0.07662 s] killed by test_generated_mutants.py::test_all_lower_case
+   - [#  20] ROR source_to_mutate: [0.08642 s] killed by test_generated_mutants.py::test_all_lower_case
+   - [#  21] ROR source_to_mutate: [0.08803 s] killed by test_generated_mutants.py::test_mixed_case
+   - [#  22] ROR source_to_mutate: [0.08460 s] killed by test_generated_mutants.py::test_mixed_case
+   - [#  23] ROR source_to_mutate: [0.08747 s] killed by test_generated_mutants.py::test_all_lower_case
+[*] Mutation score [1.82815 s]: 100.0%
+   - all: 23
+   - killed: 19 (82.6%)
+   - survived: 0 (0.0%)
+   - incompetent: 4 (17.4%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      19      0     14      0   100%
+-----------------------------------------------------------------
+TOTAL                    19      0     14      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 100.00%

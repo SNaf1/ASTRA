@@ -1,0 +1,148 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 5 tests passed:
+   - test_generated_mutants [0.19297 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR source_to_mutate: [0.23318 s] incompetent
+   - [#   2] AOR source_to_mutate: [0.15110 s] incompetent
+   - [#   3] AOR source_to_mutate: [0.15084 s] incompetent
+   - [#   4] AOR source_to_mutate: [0.14723 s] incompetent
+   - [#   5] AOR source_to_mutate: [0.15003 s] incompetent
+   - [#   6] AOR source_to_mutate: [0.14977 s] incompetent
+   - [#   7] AOR source_to_mutate: [0.15468 s] incompetent
+   - [#   8] AOR source_to_mutate: [0.16493 s] incompetent
+   - [#   9] AOR source_to_mutate: [0.14606 s] incompetent
+   - [#  10] AOR source_to_mutate: [0.15461 s] incompetent
+   - [#  11] AOR source_to_mutate: [0.15233 s] incompetent
+   - [#  12] AOR source_to_mutate: [0.14913 s] killed by test_generated_mutants.py::test_get_song
+   - [#  13] AOR source_to_mutate: [0.15776 s] incompetent
+   - [#  14] AOR source_to_mutate: [0.17296 s] incompetent
+   - [#  15] AOR source_to_mutate: [0.15110 s] incompetent
+   - [#  16] AOR source_to_mutate: [0.14961 s] incompetent
+   - [#  17] AOR source_to_mutate: [0.14807 s] incompetent
+   - [#  18] AOR source_to_mutate: [0.15289 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  19] AOR source_to_mutate: [0.16694 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [#  20] AOR source_to_mutate: [0.16240 s] incompetent
+   - [#  21] ASR source_to_mutate: [0.16992 s] incompetent
+   - [#  22] ASR source_to_mutate: [0.15974 s] incompetent
+   - [#  23] ASR source_to_mutate: [0.15496 s] incompetent
+   - [#  24] ASR source_to_mutate: [0.14799 s] incompetent
+   - [#  25] ASR source_to_mutate: [0.16869 s] incompetent
+   - [#  26] ASR source_to_mutate: [0.18753 s] incompetent
+   - [#  27] ASR source_to_mutate: [0.18248 s] incompetent
+   - [#  28] ASR source_to_mutate: [0.16898 s] incompetent
+   - [#  29] ASR source_to_mutate: [0.16442 s] incompetent
+   - [#  30] COI source_to_mutate: [0.16101 s] killed by test_generated_mutants.py::test_get_song
+   - [#  31] COI source_to_mutate: [0.17738 s] killed by test_generated_mutants.py::test_get_song
+   - [#  32] COI source_to_mutate: [0.15444 s] killed by test_generated_mutants.py::test_get_song
+   - [#  33] COI source_to_mutate: [0.15015 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [#  34] CRP source_to_mutate: [0.17978 s] killed by test_generated_mutants.py::test_get_song
+   - [#  35] CRP source_to_mutate: [0.17106 s] killed by test_generated_mutants.py::test_get_song
+   - [#  36] CRP source_to_mutate: [0.14821 s] killed by test_generated_mutants.py::test_get_song
+   - [#  37] CRP source_to_mutate: [0.15314 s] killed by test_generated_mutants.py::test_get_song
+   - [#  38] CRP source_to_mutate: [0.18383 s] killed by test_generated_mutants.py::test_get_song
+   - [#  39] CRP source_to_mutate: [0.15794 s] killed by test_generated_mutants.py::test_get_song
+   - [#  40] CRP source_to_mutate: [0.23789 s] killed by test_generated_mutants.py::test_get_song
+   - [#  41] CRP source_to_mutate: [0.17938 s] killed by test_generated_mutants.py::test_get_song
+   - [#  42] CRP source_to_mutate: [0.16455 s] killed by test_generated_mutants.py::test_get_song
+   - [#  43] CRP source_to_mutate: [0.17875 s] killed by test_generated_mutants.py::test_get_song
+   - [#  44] CRP source_to_mutate: [0.17813 s] killed by test_generated_mutants.py::test_get_song
+   - [#  45] CRP source_to_mutate: [0.15914 s] killed by test_generated_mutants.py::test_get_song
+   - [#  46] CRP source_to_mutate: [0.17615 s] killed by test_generated_mutants.py::test_get_song
+   - [#  47] CRP source_to_mutate: [0.21138 s] killed by test_generated_mutants.py::test_get_song
+   - [#  48] CRP source_to_mutate: [0.16513 s] killed by test_generated_mutants.py::test_recite_all_verses
+   - [#  49] CRP source_to_mutate: [0.18120 s] killed by test_generated_mutants.py::test_recite_all_verses
+   - [#  50] CRP source_to_mutate: [0.23688 s] killed by test_generated_mutants.py::test_get_song
+   - [#  51] CRP source_to_mutate: [0.23892 s] killed by test_generated_mutants.py::test_get_song
+   - [#  52] CRP source_to_mutate: [0.19389 s] killed by test_generated_mutants.py::test_get_song
+   - [#  53] CRP source_to_mutate: [0.27412 s] killed by test_generated_mutants.py::test_get_song
+   - [#  54] CRP source_to_mutate: [0.31071 s] killed by test_generated_mutants.py::test_get_song
+   - [#  55] CRP source_to_mutate: [0.18231 s] killed by test_generated_mutants.py::test_get_song
+   - [#  56] CRP source_to_mutate: [0.15301 s] killed by test_generated_mutants.py::test_get_song
+   - [#  57] CRP source_to_mutate: [0.19547 s] killed by test_generated_mutants.py::test_get_song
+   - [#  58] CRP source_to_mutate: [0.15085 s] killed by test_generated_mutants.py::test_get_song
+   - [#  59] CRP source_to_mutate: [0.15303 s] killed by test_generated_mutants.py::test_get_song
+   - [#  60] CRP source_to_mutate: [0.18846 s] killed by test_generated_mutants.py::test_get_song
+   - [#  61] CRP source_to_mutate: [0.16359 s] killed by test_generated_mutants.py::test_get_song
+   - [#  62] CRP source_to_mutate: [0.15415 s] killed by test_generated_mutants.py::test_get_song
+   - [#  63] CRP source_to_mutate: [0.15935 s] killed by test_generated_mutants.py::test_get_song
+   - [#  64] CRP source_to_mutate: [0.15151 s] killed by test_generated_mutants.py::test_get_song
+   - [#  65] CRP source_to_mutate: [0.15350 s] killed by test_generated_mutants.py::test_get_song
+   - [#  66] CRP source_to_mutate: [0.15762 s] killed by test_generated_mutants.py::test_get_song
+   - [#  67] CRP source_to_mutate: [0.18091 s] killed by test_generated_mutants.py::test_get_song
+   - [#  68] CRP source_to_mutate: [0.15200 s] killed by test_generated_mutants.py::test_get_song
+   - [#  69] CRP source_to_mutate: [0.16053 s] killed by test_generated_mutants.py::test_get_song
+   - [#  70] CRP source_to_mutate: [0.19445 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  71] CRP source_to_mutate: [0.17110 s] survived
+   - [#  72] CRP source_to_mutate: [0.16329 s] survived
+   - [#  73] CRP source_to_mutate: [0.15640 s] killed by test_generated_mutants.py::test_get_song
+   - [#  74] CRP source_to_mutate: [0.26410 s] killed by test_generated_mutants.py::test_get_song
+   - [#  75] CRP source_to_mutate: [0.21444 s] killed by test_generated_mutants.py::test_get_song
+   - [#  76] CRP source_to_mutate: [0.17241 s] killed by test_generated_mutants.py::test_get_song
+   - [#  77] CRP source_to_mutate: [0.15497 s] killed by test_generated_mutants.py::test_get_song
+   - [#  78] CRP source_to_mutate: [0.15352 s] killed by test_generated_mutants.py::test_get_song
+   - [#  79] CRP source_to_mutate: [0.21890 s] killed by test_generated_mutants.py::test_get_song
+   - [#  80] CRP source_to_mutate: [0.23405 s] killed by test_generated_mutants.py::test_get_song
+   - [#  81] CRP source_to_mutate: [0.32208 s] killed by test_generated_mutants.py::test_get_song
+   - [#  82] CRP source_to_mutate: [0.15193 s] killed by test_generated_mutants.py::test_get_song
+   - [#  83] CRP source_to_mutate: [0.16728 s] killed by test_generated_mutants.py::test_get_song
+   - [#  84] CRP source_to_mutate: [0.33829 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [#  85] CRP source_to_mutate: [0.22680 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [#  86] CRP source_to_mutate: [0.16942 s] killed by test_generated_mutants.py::test_get_song
+   - [#  87] CRP source_to_mutate: [0.18847 s] killed by test_generated_mutants.py::test_get_song
+   - [#  88] CRP source_to_mutate: [0.14908 s] killed by test_generated_mutants.py::test_get_song
+   - [#  89] CRP source_to_mutate: [0.15048 s] killed by test_generated_mutants.py::test_get_song
+   - [#  90] CRP source_to_mutate: [0.15925 s] killed by test_generated_mutants.py::test_get_song
+   - [#  91] CRP source_to_mutate: [0.19432 s] killed by test_generated_mutants.py::test_recite_all_verses
+   - [#  92] CRP source_to_mutate: [0.16831 s] killed by test_generated_mutants.py::test_recite_all_verses
+   - [#  93] CRP source_to_mutate: [0.19278 s] killed by test_generated_mutants.py::test_get_song
+   - [#  94] CRP source_to_mutate: [0.18606 s] killed by test_generated_mutants.py::test_recite_all_verses
+   - [#  95] CRP source_to_mutate: [0.17204 s] killed by test_generated_mutants.py::test_recite_all_verses
+   - [#  96] CRP source_to_mutate: [0.15029 s] killed by test_generated_mutants.py::test_get_song
+   - [#  97] CRP source_to_mutate: [0.15593 s] killed by test_generated_mutants.py::test_get_song
+   - [#  98] CRP source_to_mutate: [0.14908 s] killed by test_generated_mutants.py::test_get_song
+   - [#  99] CRP source_to_mutate: [0.18087 s] killed by test_generated_mutants.py::test_get_song
+   - [# 100] CRP source_to_mutate: [0.19644 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [# 101] CRP source_to_mutate: [0.19410 s] survived
+   - [# 102] CRP source_to_mutate: [0.20332 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [# 103] CRP source_to_mutate: [0.24048 s] survived
+   - [# 104] CRP source_to_mutate: [0.26433 s] killed by test_generated_mutants.py::test_verses
+   - [# 105] CRP source_to_mutate: [0.23295 s] killed by test_generated_mutants.py::test_verses
+   - [# 106] CRP source_to_mutate: [0.14726 s] killed by test_generated_mutants.py::test_verses
+   - [# 107] CRP source_to_mutate: [0.17393 s] killed by test_generated_mutants.py::test_verses
+   - [# 108] CRP source_to_mutate: [0.16031 s] killed by test_generated_mutants.py::test_verses
+   - [# 109] CRP source_to_mutate: [0.15434 s] killed by test_generated_mutants.py::test_verses
+   - [# 110] CRP source_to_mutate: [0.15411 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [# 111] CRP source_to_mutate: [0.15312 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [# 112] CRP source_to_mutate: [0.15256 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [# 113] CRP source_to_mutate: [0.15445 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [# 114] CRP source_to_mutate: [0.16637 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [# 115] ROR source_to_mutate: [0.15311 s] killed by test_generated_mutants.py::test_get_song
+   - [# 116] ROR source_to_mutate: [0.15626 s] killed by test_generated_mutants.py::test_get_song
+   - [# 117] ROR source_to_mutate: [0.14768 s] killed by test_generated_mutants.py::test_get_song
+   - [# 118] ROR source_to_mutate: [0.15263 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+[*] Mutation score [21.38724 s]: 95.7%
+   - all: 118
+   - killed: 88 (74.6%)
+   - survived: 4 (3.4%)
+   - incompetent: 26 (22.0%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      39      0     12      0   100%
+-----------------------------------------------------------------
+TOTAL                    39      0     12      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 95.70%

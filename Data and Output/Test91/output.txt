@@ -1,0 +1,33 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 53 tests passed:
+   - test_generated_mutants [0.16021 s]
+[*] Start mutants generation and execution:
+   - [#   1] ROR source_to_mutate: [0.18903 s] killed by test_generated_mutants.py::test_empty_string
+   - [#   2] SIR source_to_mutate: [0.00000 s] incompetent
+   - [#   3] SIR source_to_mutate: [0.00000 s] incompetent
+[*] Mutation score [0.37456 s]: 100.0%
+   - all: 3
+   - killed: 1 (33.3%)
+   - survived: 0 (0.0%)
+   - incompetent: 2 (66.7%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py       4      0      0      0   100%
+-----------------------------------------------------------------
+TOTAL                     4      0      0      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 100.00%

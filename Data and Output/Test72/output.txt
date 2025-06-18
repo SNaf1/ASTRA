@@ -1,0 +1,41 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 27 tests passed:
+   - test_generated_mutants [0.12900 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR source_to_mutate: [0.19193 s] killed by test_generated_mutants.py::test_will_it_fly_unbalanced_and_heavy
+   - [#   2] ASR source_to_mutate: [0.09853 s] killed by test_generated_mutants.py::test_will_it_fly_balanced_and_light
+   - [#   3] ASR source_to_mutate: [0.09774 s] killed by test_generated_mutants.py::test_will_it_fly_balanced_and_light
+   - [#   4] COI source_to_mutate: [0.08591 s] killed by test_generated_mutants.py::test_will_it_fly_balanced_but_heavy
+   - [#   5] COI source_to_mutate: [0.09890 s] killed by test_generated_mutants.py::test_will_it_fly_unbalanced_and_heavy
+   - [#   6] COI source_to_mutate: [0.09661 s] killed by test_generated_mutants.py::test_will_it_fly_unbalanced_and_heavy
+   - [#   7] ROR source_to_mutate: [0.09689 s] killed by test_generated_mutants.py::test_will_it_fly_balanced_but_heavy
+   - [#   8] ROR source_to_mutate: [0.09126 s] killed by test_generated_mutants.py::test_will_it_fly_empty_list
+   - [#   9] ROR source_to_mutate: [0.09017 s] killed by test_generated_mutants.py::test_will_it_fly_unbalanced_and_heavy
+   - [#  10] ROR source_to_mutate: [0.09691 s] survived
+   - [#  11] ROR source_to_mutate: [0.08317 s] killed by test_generated_mutants.py::test_will_it_fly_unbalanced_and_heavy
+[*] Mutation score [1.29871 s]: 90.9%
+   - all: 11
+   - killed: 10 (90.9%)
+   - survived: 1 (9.1%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      10      0      6      0   100%
+-----------------------------------------------------------------
+TOTAL                    10      0      6      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 90.90%

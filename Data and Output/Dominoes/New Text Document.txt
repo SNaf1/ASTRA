@@ -1,0 +1,67 @@
+[*] Start mutants generation and execution:
+   - [#   1] AOD source_to_mutate: [0.24873 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_first
+   - [#   2] AOD source_to_mutate: [0.18140 s] killed by test_generated_mutants.py::test_can_chain_one_domino_can_chain
+   - [#   3] AOR source_to_mutate: [0.17349 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_first
+   - [#   4] AOR source_to_mutate: [0.17507 s] incompetent
+   - [#   5] AOR source_to_mutate: [0.17245 s] incompetent
+   - [#   6] AOR source_to_mutate: [0.17433 s] killed by test_generated_mutants.py::test_can_chain_one_domino_can_chain
+   - [#   7] COD source_to_mutate: [0.18515 s] killed by test_generated_mutants.py::test_can_chain_empty
+   - [#   8] COI source_to_mutate: [0.16783 s] incompetent
+   - [#   9] COI source_to_mutate: [0.16443 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_first
+   - [#  10] COI source_to_mutate: [0.17286 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_second
+   - [#  11] COI source_to_mutate: [0.17097 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_first_swapped
+   - [#  12] COI source_to_mutate: [0.17295 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_first_swapped
+   - [#  13] COI source_to_mutate: [0.18118 s] killed by test_generated_mutants.py::test_can_chain_empty
+   - [#  14] COI source_to_mutate: [0.16475 s] killed by test_generated_mutants.py::test_can_chain_one_domino_can_chain
+   - [#  15] CRP source_to_mutate: [0.15821 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_first
+   - [#  16] CRP source_to_mutate: [0.15903 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_first
+   - [#  17] CRP source_to_mutate: [0.16519 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_first
+   - [#  18] CRP source_to_mutate: [0.17688 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_first
+   - [#  19] CRP source_to_mutate: [0.21165 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_second
+   - [#  20] CRP source_to_mutate: [0.19995 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_second
+   - [#  21] CRP source_to_mutate: [0.21454 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_second
+   - [#  22] CRP source_to_mutate: [0.16569 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_first_swapped
+   - [#  23] CRP source_to_mutate: [0.19689 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_first_swapped
+   - [#  24] CRP source_to_mutate: [0.19368 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_first_swapped
+   - [#  25] CRP source_to_mutate: [0.21904 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_first_swapped
+   - [#  26] CRP source_to_mutate: [0.18581 s] killed by test_generated_mutants.py::test_can_chain_two_dominoes_can_chain
+   - [#  27] CRP source_to_mutate: [0.18407 s] killed by test_generated_mutants.py::test_can_chain_one_domino_can_chain
+   - [#  28] CRP source_to_mutate: [0.18015 s] killed by test_generated_mutants.py::test_can_chain_one_domino_can_chain
+   - [#  29] CRP source_to_mutate: [0.19053 s] killed by test_generated_mutants.py::test_can_chain_two_dominoes_can_chain
+   - [#  30] CRP source_to_mutate: [0.18596 s] killed by test_generated_mutants.py::test_can_chain_one_domino_can_chain
+   - [#  31] CRP source_to_mutate: [0.22845 s] killed by test_generated_mutants.py::test_can_chain_one_domino_can_chain
+   - [#  32] LCR source_to_mutate: [0.27121 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_second
+   - [#  33] LCR source_to_mutate: [0.19271 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_first_swapped
+   - [#  34] LCR source_to_mutate: [0.21409 s] incompetent
+   - [#  35] ROR source_to_mutate: [0.19499 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_first
+   - [#  36] ROR source_to_mutate: [0.17234 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_first
+   - [#  37] ROR source_to_mutate: [0.17452 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_second
+   - [#  38] ROR source_to_mutate: [0.17230 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_second
+   - [#  39] ROR source_to_mutate: [0.17265 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_first_swapped
+   - [#  40] ROR source_to_mutate: [0.24193 s] killed by test_generated_mutants.py::test_build_chain_single_item_match_first_swapped
+   - [#  41] ROR source_to_mutate: [0.28775 s] killed by test_generated_mutants.py::test_can_chain_one_domino_can_chain
+   - [#  42] SIR source_to_mutate: [0.20888 s] killed by test_generated_mutants.py::test_can_chain_one_domino_can_chain
+[*] Mutation score [8.46444 s]: 100.0%
+   - all: 42
+   - killed: 38 (90.5%)
+   - survived: 0 (0.0%)
+   - incompetent: 4 (9.5%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      24      0     16      0   100%
+-----------------------------------------------------------------
+TOTAL                    24      0     16      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 100.00%

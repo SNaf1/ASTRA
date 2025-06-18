@@ -1,0 +1,17 @@
+# Python build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Pytest cache
+.pytest_cache/
+
+# Mutation testing output folder
+mutation_output/
+example_input.py
