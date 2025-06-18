@@ -5,8 +5,8 @@ import sys
 import re
 
 # --- Configuration --- #
-# Gemini API Key (Please note: This is not secure! For production, use environment variables)
-GEMINI_API_KEY = "AIzaSyC-qwNRGQnW6xdW7ewjdUZvnGNRtj-WTAA"
+# Gemini API Key (Replace with your own API key or use environment variables for production)
+GEMINI_API_KEY = ""
 
 OUTPUT_DIR = "mutation_output"
 SOURCE_TO_MUTATE_FILENAME = "source_to_mutate.py" 
@@ -17,129 +17,15 @@ TRACE_FILENAME = "execution_trace.py"
 MAX_RETRY_ATTEMPTS = 40
 
 PROMPT_GENERATE_TESTS = """
-Analyze the following Python code and generate comprehensive test cases. Your goal is to create tests that pass against the provided code *exactly as it is written*.
-
-**CRITICAL RULE: The provided code is the single source of truth.**
-- **DO NOT FIX BUGS:** Do not write tests that assume corrected behavior. If the code has a bug (e.g., it drops special characters instead of preserving them), your tests *must* assert the buggy behavior.
-- **NO ASSUMPTIONS:** Generate assertions based *only* on what the code will produce. Before writing an `assert`, trace the function's logic step-by-step with your chosen inputs to determine the precise output.
-
-Your tests must reflect the code's actual logic, not its intended logic.
-
-1. **Always use the provided functions to setup test data** - never directly manipulate global variables or data structures
-2. **For functions that modify state**: Use the appropriate functions to set up the state before testing
-3. **For functions that read state**: Ensure state is set up through the intended API
-4. **Test edge cases**: empty states, single items, multiple items, boundary conditions
-5. **Consider mutation testing**: Write tests that will catch common mutations and also high coverage
-6. **Use @pytest.fixture(autouse=True)** to reset shared state before each test.
-7. **For tests capturing print output with `capfd`**, avoid asserting `captured.out == \"...\"`. Instead, use `in` checks or `.strip()` to allow for small formatting variations.
-8. **For functions that rely on shared or global mutable state** (e.g., lists, dictionaries): Ensure each test starts from a clean state.
-
-Example:
-```python
-@pytest.fixture(autouse=True)
-def reset_state():
-    import source_to_mutate
-    if hasattr(source_to_mutate, 'shared_data'):
-        if isinstance(source_to_mutate.shared_data, (list, dict, set)):
-            source_to_mutate.shared_data.clear()
-
-If the provided functions are insufficient to set up the necessary state for a test (e.g., there is no function to add a user), you are permitted to directly initialize or modify the required global variables (like dictionaries or lists) at the beginning of the test function to create the necessary test conditions.
-
-Globals:
-- If the functions rely on global variables, create fixtures to manage their state (e.g., reset them before each test).
-- If a global variable is a dictionary or list, you can add test data directly (e.g., `MY_DICT['key'] = 'value'`).
-- If there are no setup functions to initialize state, you are allowed to initialize or modify the global variables directly within the tests or fixtures.
-
-Input Handling:
-- If any function, method, or constructor uses the built-in `input()` function, you MUST use `pytest`'s `monkeypatch` fixture to simulate user input and prevent the test from hanging. This is critical for non-interactive test execution.
-
-**IMPORTANT**: Start the test file with these imports:
-```python
-import pytest
-from {source_to_mutate_filename} import * (if function have names starting with underscore or only numbers then manually write all the functionns from the selected functions file)
-```
-
-**Code to test:**
-```python
-{source_code}
-```
-
-ONLY output the pytest test code. Do NOT include the original functions or any explanations. The test code should start with 'import pytest'.
-
-**Generated pytest test code:**
+# --- PASTE YOUR TEST GENERATION PROMPT HERE ---
+# This prompt should instruct the LLM on how to generate tests.
+# It must include placeholders for {source_code} and {source_to_mutate_filename}.
 """
 
-PROMPT_FIX_TESTS = """You are an expert Python test engineer. Your task is to fix a single failing test function.
-
-You are fixing exactly ONE failing pytest test.
-
-Inputs you receive
-1. The full **source code** of the function under test.
-2. The failing **test function** code.
-3. The complete **traceback**, including the line that shows
-      E       AssertionError: assert <actual> == <expected>
-
-Do the following *before* producing the new test code:
-
-STEP A  Run the function yourself in a scratch cell (pseudo-code is fine)
-       using the same arguments the test uses.  
-       Capture the ACTUAL value that the implementation returns.
-
-STEP B  Compare ACTUAL to the test’s EXPECTED.  Decide which is wrong.
-       ✱ You are NOT allowed to change the implementation.
-       ✱ Therefore EXPECTED must be updated to equal ACTUAL.
-
-STEP C  Rewrite ONLY the failing test function so that it passes.
-       • Replace the old expected value with the ACTUAL value you measured.
-       • Keep the assertion structure identical (same function name, same inputs).
-
-OUTPUT exactly one Python test function, nothing else.
-
- You must check the test function against the original source code to identify what the original function is expecting and fix the test case accordingly.
-
-**CRITICAL ANALYSIS BEFORE WRITING CODE:**
-1.  **Identify the root cause:** Is the test failing because of a simple value mismatch in an `assert` statement, or is the code crashing with an unhandled exception (like `IndexError`, `TypeError`, etc.)?
-2.  **Determine the correct fix:**
-    *   **For `assert` failures:** Correct the `assert` statement to match the code's *actual* output.
-    *   **For exceptions:** If the exception is expected behavior for the given inputs (e.g., invalid input causing a crash), rewrite the test to use `pytest.raises(ExceptionType)` to assert that the specific exception is thrown. Do not just wrap the call in a `try...except Pass`.
-    *   **Match the Implementation Exactly**:
-        - The test must match the exact error message format produced by the source code
-        - You cannot modify the source code to match the test - always update the test to match the source
-
-**CRITICAL RULES:**
--   Your response must contain ONLY the Python code for the single corrected test function.
--   DO NOT output the entire test file.
--   DO NOT include any imports, fixtures, comments, or explanations.
--   Pay attention to whitespace and punctuation in error messages
-
-If a test expects an exception but none is raised, analyze the implementation of the class or function under test. Sometimes, validation is performed in a classmethod (like .check()) rather than in the constructor or main function. In such cases, modify the test to call the correct validation method directly
-
---- CONTEXT ---
-
-**1. Failing Test Name:**
-`{failing_test_name}`
-
-**2. Full Source Code:**
-```python
-{source_code}
-```
-
-**3. Full Test Suite (with the failing test):**
-```python
-{test_code}
-```
-
-**4. Error Output:**
-```
-{error_output}
-```
-
-**5. Dynamic Execution Trace:**
-```
-{execution_trace}
-```
-
-{attempt_context}
+PROMPT_FIX_TESTS = """
+# --- PASTE YOUR TEST FIXING PROMPT HERE ---
+# This prompt should instruct the LLM on how to fix a failing test.
+# It must include placeholders for {failing_test_name}, {source_code}, {test_code}, {error_output}, {execution_trace}, and {attempt_context}.
 """
 
 # --- Helper Functions --- #
