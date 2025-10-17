@@ -1,0 +1,59 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 17 tests passed:
+   - test_generated_mutants [0.22916 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR source_to_mutate: [0.23894 s] killed by test_generated_mutants.py::test_slices_valid_input
+   - [#   2] AOR source_to_mutate: [0.24481 s] killed by test_generated_mutants.py::test_slices_valid_input
+   - [#   3] AOR source_to_mutate: [0.15985 s] killed by test_generated_mutants.py::test_slices_valid_input
+   - [#   4] COD source_to_mutate: [0.15404 s] killed by test_generated_mutants.py::test_slices_valid_input
+   - [#   5] COD source_to_mutate: [0.15798 s] killed by test_generated_mutants.py::test_slices_valid_input
+   - [#   6] COD source_to_mutate: [0.19440 s] killed by test_generated_mutants.py::test_slices_valid_input
+   - [#   7] COI source_to_mutate: [0.19847 s] killed by test_generated_mutants.py::test_slices_valid_input
+   - [#   8] COI source_to_mutate: [0.15202 s] killed by test_generated_mutants.py::test_slices_valid_input
+   - [#   9] COI source_to_mutate: [0.15225 s] killed by test_generated_mutants.py::test_slices_valid_input
+   - [#  10] COI source_to_mutate: [0.15606 s] killed by test_generated_mutants.py::test_largest_product_valid_input
+   - [#  11] CRP source_to_mutate: [0.16952 s] killed by test_generated_mutants.py::test_slices_invalid_size_greater_than_series
+   - [#  12] CRP source_to_mutate: [0.17700 s] killed by test_generated_mutants.py::test_slices_invalid_size_greater_than_series
+   - [#  13] CRP source_to_mutate: [0.20492 s] killed by test_generated_mutants.py::test_largest_product_size_one
+   - [#  14] CRP source_to_mutate: [0.17518 s] killed by test_generated_mutants.py::test_slices_invalid_size_negative
+   - [#  15] CRP source_to_mutate: [0.17280 s] killed by test_generated_mutants.py::test_slices_invalid_size_negative
+   - [#  16] CRP source_to_mutate: [0.16382 s] killed by test_generated_mutants.py::test_slices_invalid_input_non_digit
+   - [#  17] CRP source_to_mutate: [0.19475 s] killed by test_generated_mutants.py::test_slices_invalid_input_non_digit
+   - [#  18] CRP source_to_mutate: [0.15618 s] killed by test_generated_mutants.py::test_slices_valid_input
+   - [#  19] CRP source_to_mutate: [0.16946 s] killed by test_generated_mutants.py::test_largest_product_size_zero
+   - [#  20] CRP source_to_mutate: [0.19030 s] killed by test_generated_mutants.py::test_largest_product_size_zero
+   - [#  21] ROR source_to_mutate: [0.15408 s] killed by test_generated_mutants.py::test_slices_valid_input
+   - [#  22] ROR source_to_mutate: [0.17378 s] killed by test_generated_mutants.py::test_slices_size_equals_series_length
+   - [#  23] ROR source_to_mutate: [0.18682 s] killed by test_generated_mutants.py::test_slices_valid_input
+   - [#  24] ROR source_to_mutate: [0.17475 s] killed by test_generated_mutants.py::test_slices_invalid_size_zero
+   - [#  25] ROR source_to_mutate: [0.17968 s] killed by test_generated_mutants.py::test_largest_product_valid_input
+   - [#  26] SIR source_to_mutate: [0.19784 s] killed by test_generated_mutants.py::test_slices_valid_input
+   - [#  27] SIR source_to_mutate: [0.17757 s] killed by test_generated_mutants.py::test_slices_valid_input
+[*] Mutation score [5.17730 s]: 100.0%
+   - all: 27
+   - killed: 27 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      15      0      8      0   100%
+-----------------------------------------------------------------
+TOTAL                    15      0      8      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 100.00%
+
+--- Analysis Finished ---

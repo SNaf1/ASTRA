@@ -1,0 +1,61 @@
+[*] Start mutants generation and execution:
+   - [#   1] AOD source_to_mutate: [0.25116 s] killed by test_generated_mutants.py::test_to_digits_base_10
+   - [#   2] AOR source_to_mutate: [0.16694 s] killed by test_generated_mutants.py::test_from_digits_base_10
+   - [#   3] AOR source_to_mutate: [0.16154 s] killed by test_generated_mutants.py::test_from_digits_base_10
+   - [#   4] AOR source_to_mutate: [0.15521 s] killed by test_generated_mutants.py::test_from_digits_base_10
+   - [#   5] AOR source_to_mutate: [0.15331 s] killed by test_generated_mutants.py::test_from_digits_base_10
+   - [#   6] AOR source_to_mutate: [0.16403 s] killed by test_generated_mutants.py::test_to_digits_base_10
+   - [#   7] AOR source_to_mutate: [0.17981 s] killed by test_generated_mutants.py::test_to_digits_base_10
+   - [#   8] ASR source_to_mutate: [0.15884 s] killed by test_generated_mutants.py::test_to_digits_base_10
+   - [#   9] ASR source_to_mutate:    - [#  10] COI source_to_mutate: [0.47439 s] killed by test_generated_mutants.py::test_to_digits_base_10
+   - [#  11] COI source_to_mutate: [0.17020 s] killed by test_generated_mutants.py::test_to_digits_base_10
+   - [#  12] COI source_to_mutate: [0.16349 s] killed by test_generated_mutants.py::test_rebase_base_2_to_base_10
+   - [#  13] COI source_to_mutate: [0.19085 s] killed by test_generated_mutants.py::test_rebase_base_2_to_base_10
+   - [#  14] COI source_to_mutate: [0.16326 s] killed by test_generated_mutants.py::test_rebase_base_2_to_base_10
+   - [#  15] CRP source_to_mutate: [0.16355 s] killed by test_generated_mutants.py::test_to_digits_base_2
+   - [#  16] CRP source_to_mutate: [0.17222 s] killed by test_generated_mutants.py::test_to_digits_base_10
+   - [#  17] CRP source_to_mutate: [0.22020 s] killed by test_generated_mutants.py::test_to_digits_zero
+   - [#  18] CRP source_to_mutate: [0.17410 s] killed by test_generated_mutants.py::test_rebase_base_2_to_base_10
+   - [#  19] CRP source_to_mutate: [0.19726 s] killed by test_generated_mutants.py::test_rebase_invalid_input_base
+   - [#  20] CRP source_to_mutate: [0.18253 s] killed by test_generated_mutants.py::test_rebase_invalid_input_base
+   - [#  21] CRP source_to_mutate: [0.17373 s] killed by test_generated_mutants.py::test_rebase_base_10_to_base_2
+   - [#  22] CRP source_to_mutate: [0.18780 s] killed by test_generated_mutants.py::test_rebase_invalid_output_base
+   - [#  23] CRP source_to_mutate: [0.18383 s] killed by test_generated_mutants.py::test_rebase_invalid_output_base
+   - [#  24] CRP source_to_mutate: [0.16799 s] killed by test_generated_mutants.py::test_rebase_base_2_to_base_10
+   - [#  25] CRP source_to_mutate: [0.20094 s] killed by test_generated_mutants.py::test_rebase_invalid_digit
+   - [#  26] CRP source_to_mutate: [0.18273 s] killed by test_generated_mutants.py::test_rebase_invalid_digit
+   - [#  27] LCR source_to_mutate: [0.18231 s] killed by test_generated_mutants.py::test_rebase_invalid_digit
+   - [#  28] ROR source_to_mutate: [0.15750 s] killed by test_generated_mutants.py::test_to_digits_base_10
+   - [#  29] ROR source_to_mutate:    - [#  30] ROR source_to_mutate: [0.46100 s] killed by test_generated_mutants.py::test_rebase_base_10_to_base_2
+   - [#  31] ROR source_to_mutate: [0.19494 s] killed by test_generated_mutants.py::test_rebase_base_2_to_base_10
+   - [#  32] ROR source_to_mutate: [0.17827 s] killed by test_generated_mutants.py::test_rebase_base_2_to_base_10
+   - [#  33] ROR source_to_mutate: [0.16643 s] killed by test_generated_mutants.py::test_rebase_base_10_to_base_2
+   - [#  34] ROR source_to_mutate: [0.23110 s] killed by test_generated_mutants.py::test_rebase_base_2_to_base_10
+   - [#  35] ROR source_to_mutate: [0.16970 s] killed by test_generated_mutants.py::test_rebase_base_2_to_base_10
+   - [#  36] ROR source_to_mutate: [0.16226 s] killed by test_generated_mutants.py::test_rebase_base_2_to_base_10
+   - [#  37] ROR source_to_mutate: [0.17636 s] killed by test_generated_mutants.py::test_rebase_invalid_digit_2
+   - [#  38] SIR source_to_mutate: [0.18632 s] killed by test_generated_mutants.py::test_to_digits_base_10
+[*] Mutation score [17.45595 s]: 100.0%
+   - all: 38
+   - killed: 36 (94.7%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 2 (5.3%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      18      0     10      0   100%
+-----------------------------------------------------------------
+TOTAL                    18      0     10      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 100.00%

@@ -1,0 +1,60 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 15 tests passed:
+   - test_generated_mutants [0.12268 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOD source_to_mutate: [0.18092 s] killed by test_generated_mutants.py::test_invalid_triangle_sum_less_than
+   - [#   2] AOR source_to_mutate: [0.09077 s] killed by test_generated_mutants.py::test_valid_triangle
+   - [#   3] AOR source_to_mutate: [0.08776 s] killed by test_generated_mutants.py::test_valid_triangle
+   - [#   4] AOR source_to_mutate: [0.08120 s] killed by test_generated_mutants.py::test_valid_triangle
+   - [#   5] AOR source_to_mutate: [0.08646 s] killed by test_generated_mutants.py::test_invalid_triangle_sum_less_than
+   - [#   6] AOR source_to_mutate: [0.08826 s] incompetent
+   - [#   7] AOR source_to_mutate: [0.08779 s] incompetent
+   - [#   8] AOR source_to_mutate: [0.09018 s] killed by test_generated_mutants.py::test_equilateral_triangle
+   - [#   9] AOR source_to_mutate: [0.08887 s] killed by test_generated_mutants.py::test_valid_triangle
+   - [#  10] AOR source_to_mutate: [0.09092 s] killed by test_generated_mutants.py::test_valid_triangle
+   - [#  11] AOR source_to_mutate: [0.08278 s] killed by test_generated_mutants.py::test_valid_triangle
+   - [#  12] AOR source_to_mutate: [0.08358 s] killed by test_generated_mutants.py::test_valid_triangle
+   - [#  13] AOR source_to_mutate: [0.08304 s] killed by test_generated_mutants.py::test_valid_triangle
+   - [#  14] AOR source_to_mutate: [0.08343 s] killed by test_generated_mutants.py::test_valid_triangle
+   - [#  15] AOR source_to_mutate: [0.08523 s] killed by test_generated_mutants.py::test_valid_triangle
+   - [#  16] AOR source_to_mutate: [0.08280 s] killed by test_generated_mutants.py::test_valid_triangle
+   - [#  17] AOR source_to_mutate: [0.11050 s] killed by test_generated_mutants.py::test_valid_triangle
+   - [#  18] AOR source_to_mutate: [0.09098 s] killed by test_generated_mutants.py::test_equilateral_triangle
+   - [#  19] AOR source_to_mutate: [0.08767 s] killed by test_generated_mutants.py::test_equilateral_triangle
+   - [#  20] AOR source_to_mutate: [0.08517 s] killed by test_generated_mutants.py::test_equilateral_triangle
+   - [#  21] AOR source_to_mutate: [0.08817 s] killed by test_generated_mutants.py::test_valid_triangle
+   - [#  22] AOR source_to_mutate: [0.09348 s] killed by test_generated_mutants.py::test_valid_triangle
+   - [#  23] COI source_to_mutate: [0.08941 s] killed by test_generated_mutants.py::test_valid_triangle
+   - [#  24] LCR source_to_mutate: [0.09173 s] incompetent
+   - [#  25] ROR source_to_mutate: [0.09825 s] killed by test_generated_mutants.py::test_valid_triangle
+   - [#  26] ROR source_to_mutate: [0.09716 s] killed by test_generated_mutants.py::test_invalid_triangle_sum_equal_to
+   - [#  27] ROR source_to_mutate: [0.09376 s] killed by test_generated_mutants.py::test_valid_triangle
+   - [#  28] ROR source_to_mutate: [0.10229 s] survived
+   - [#  29] ROR source_to_mutate: [0.10377 s] killed by test_generated_mutants.py::test_valid_triangle
+   - [#  30] ROR source_to_mutate: [0.09993 s] survived
+[*] Mutation score [2.99147 s]: 92.6%
+   - all: 30
+   - killed: 25 (83.3%)
+   - survived: 2 (6.7%)
+   - incompetent: 3 (10.0%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py       7      0      2      0   100%
+-----------------------------------------------------------------
+TOTAL                     7      0      2      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 92.60%

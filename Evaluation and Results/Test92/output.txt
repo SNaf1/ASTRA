@@ -1,0 +1,40 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 23 tests passed:
+   - test_generated_mutants [0.12888 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR source_to_mutate: [0.18336 s] killed by test_generated_mutants.py::test_positive_sum
+   - [#   2] AOR source_to_mutate: [0.11299 s] survived
+   - [#   3] AOR source_to_mutate: [0.09676 s] killed by test_generated_mutants.py::test_zero_and_negatives
+   - [#   4] COI source_to_mutate: [0.10210 s] killed by test_generated_mutants.py::test_positive_sum
+   - [#   5] COI source_to_mutate: [0.10344 s] killed by test_generated_mutants.py::test_positive_sum
+   - [#   6] LCR source_to_mutate: [0.10143 s] survived
+   - [#   7] LCR source_to_mutate: [0.08625 s] killed by test_generated_mutants.py::test_positive_sum
+   - [#   8] ROR source_to_mutate: [0.08976 s] killed by test_generated_mutants.py::test_positive_sum
+   - [#   9] ROR source_to_mutate: [0.09263 s] killed by test_generated_mutants.py::test_no_sum
+   - [#  10] ROR source_to_mutate: [0.09655 s] killed by test_generated_mutants.py::test_no_sum
+[*] Mutation score [1.23687 s]: 80.0%
+   - all: 10
+   - killed: 8 (80.0%)
+   - survived: 2 (20.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py       6      0      4      0   100%
+-----------------------------------------------------------------
+TOTAL                     6      0      4      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 80.00%

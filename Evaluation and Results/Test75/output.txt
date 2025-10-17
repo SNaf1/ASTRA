@@ -1,0 +1,49 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 18 tests passed:
+   - test_generated_mutants [0.31881 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR source_to_mutate:    - [#   2] AOR source_to_mutate: [0.18267 s] killed by test_generated_mutants.py::test_is_multiply_prime_true
+   - [#   3] AOR source_to_mutate: [0.09881 s] killed by test_generated_mutants.py::test_is_multiply_prime_false
+   - [#   4] AOR source_to_mutate: [0.12808 s] killed by test_generated_mutants.py::test_is_multiply_prime_true
+   - [#   5] AOR source_to_mutate: [0.12618 s] killed by test_generated_mutants.py::test_is_multiply_prime_true
+   - [#   6] AOR source_to_mutate: [0.09489 s] killed by test_generated_mutants.py::test_is_multiply_prime_false
+   - [#   7] AOR source_to_mutate: [0.12924 s] killed by test_generated_mutants.py::test_is_multiply_prime_true
+   - [#   8] BCR source_to_mutate: [0.00000 s] incompetent
+   - [#   9] BCR source_to_mutate: [0.00000 s] incompetent
+   - [#  10] BCR source_to_mutate: [0.00000 s] incompetent
+   - [#  11] COD source_to_mutate: [0.17742 s] killed by test_generated_mutants.py::test_is_multiply_prime_true
+   - [#  12] COD source_to_mutate: [0.17424 s] killed by test_generated_mutants.py::test_is_multiply_prime_true
+   - [#  13] COD source_to_mutate: [0.11904 s] killed by test_generated_mutants.py::test_is_multiply_prime_true
+   - [#  14] COI source_to_mutate: [0.08645 s] killed by test_generated_mutants.py::test_is_multiply_prime_true
+   - [#  15] COI source_to_mutate: [0.17362 s] killed by test_generated_mutants.py::test_is_multiply_prime_true
+   - [#  16] COI source_to_mutate: [0.17037 s] killed by test_generated_mutants.py::test_is_multiply_prime_true
+   - [#  17] COI source_to_mutate: [0.11725 s] killed by test_generated_mutants.py::test_is_multiply_prime_true
+   - [#  18] COI source_to_mutate: [0.08671 s] killed by test_generated_mutants.py::test_is_multiply_prime_false
+   - [#  19] ROR source_to_mutate: [0.08811 s] killed by test_generated_mutants.py::test_is_multiply_prime_true
+   - [#  20] ROR source_to_mutate: [0.08953 s] killed by test_generated_mutants.py::test_is_multiply_prime_false
+[*] Mutation score [7.43989 s]: 100.0%
+   - all: 20
+   - killed: 16 (80.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 3 (15.0%)
+   - timeout: 1 (5.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      14      0     18      0   100%
+-----------------------------------------------------------------
+TOTAL                    14      0     18      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 100.00%

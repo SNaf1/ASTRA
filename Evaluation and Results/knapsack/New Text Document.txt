@@ -1,0 +1,56 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 18 tests passed:
+   - test_generated_mutants [0.21410 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR source_to_mutate: [0.28578 s] killed by test_generated_mutants.py::test_empty_items
+   - [#   2] AOR source_to_mutate: [0.16598 s] killed by test_generated_mutants.py::test_empty_items
+   - [#   3] AOR source_to_mutate: [0.15575 s] killed by test_generated_mutants.py::test_single_item_within_weight
+   - [#   4] AOR source_to_mutate: [0.19791 s] killed by test_generated_mutants.py::test_multiple_items_within_weight
+   - [#   5] AOR source_to_mutate: [0.29982 s] killed by test_generated_mutants.py::test_single_item_within_weight
+   - [#   6] AOR source_to_mutate: [0.18770 s] killed by test_generated_mutants.py::test_single_item_within_weight
+   - [#   7] AOR source_to_mutate: [0.17736 s] killed by test_generated_mutants.py::test_single_item_within_weight
+   - [#   8] AOR source_to_mutate: [0.15985 s] killed by test_generated_mutants.py::test_single_item_within_weight
+   - [#   9] COI source_to_mutate: [0.17098 s] killed by test_generated_mutants.py::test_single_item_within_weight
+   - [#  10] CRP source_to_mutate: [0.15414 s] killed by test_generated_mutants.py::test_empty_items
+   - [#  11] CRP source_to_mutate: [0.20052 s] survived
+   - [#  12] CRP source_to_mutate: [0.22196 s] survived
+   - [#  13] CRP source_to_mutate: [0.20780 s] survived
+   - [#  14] CRP source_to_mutate: [0.27334 s] killed by test_generated_mutants.py::test_single_item_within_weight
+   - [#  15] CRP source_to_mutate: [0.27883 s] killed by test_generated_mutants.py::test_single_item_within_weight
+   - [#  16] CRP source_to_mutate: [0.17511 s] killed by test_generated_mutants.py::test_single_item_within_weight
+   - [#  17] CRP source_to_mutate: [0.15373 s] killed by test_generated_mutants.py::test_single_item_within_weight
+   - [#  18] CRP source_to_mutate: [0.17152 s] killed by test_generated_mutants.py::test_single_item_within_weight
+   - [#  19] CRP source_to_mutate: [0.19027 s] killed by test_generated_mutants.py::test_single_item_within_weight
+   - [#  20] CRP source_to_mutate: [0.20921 s] killed by test_generated_mutants.py::test_single_item_within_weight
+   - [#  21] CRP source_to_mutate: [0.15661 s] killed by test_generated_mutants.py::test_single_item_within_weight
+   - [#  22] CRP source_to_mutate: [0.15711 s] killed by test_generated_mutants.py::test_single_item_within_weight
+   - [#  23] CRP source_to_mutate: [0.16773 s] killed by test_generated_mutants.py::test_multiple_items_exact_weight
+   - [#  24] CRP source_to_mutate: [0.17606 s] killed by test_generated_mutants.py::test_multiple_items_some_exceeding_weight
+   - [#  25] ROR source_to_mutate: [0.17322 s] killed by test_generated_mutants.py::test_single_item_within_weight
+   - [#  26] ROR source_to_mutate: [0.20413 s] killed by test_generated_mutants.py::test_multiple_items_within_weight
+[*] Mutation score [5.41808 s]: 88.5%
+   - all: 26
+   - killed: 23 (88.5%)
+   - survived: 3 (11.5%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      10      0      6      0   100%
+-----------------------------------------------------------------
+TOTAL                    10      0      6      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 88.50%

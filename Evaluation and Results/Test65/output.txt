@@ -1,0 +1,41 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 15 tests passed:
+   - test_generated_mutants [0.11614 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOD source_to_mutate: [0.17588 s] killed by test_generated_mutants.py::test_circular_shift_positive_shift_greater_than_length
+   - [#   2] AOR source_to_mutate: [0.08452 s] killed by test_generated_mutants.py::test_circular_shift_positive_shift_greater_than_length
+   - [#   3] AOR source_to_mutate: [0.07748 s] killed by test_generated_mutants.py::test_circular_shift_positive_shift_less_than_length
+   - [#   4] AOR source_to_mutate: [0.08368 s] incompetent
+   - [#   5] AOR source_to_mutate: [0.07989 s] killed by test_generated_mutants.py::test_circular_shift_positive_shift_less_than_length
+   - [#   6] COI source_to_mutate: [0.08775 s] killed by test_generated_mutants.py::test_circular_shift_positive_shift_equal_to_length
+   - [#   7] ROR source_to_mutate: [0.08766 s] killed by test_generated_mutants.py::test_circular_shift_zero_shift
+   - [#   8] ROR source_to_mutate: [0.08408 s] killed by test_generated_mutants.py::test_circular_shift_positive_shift_equal_to_length
+   - [#   9] SIR source_to_mutate: [0.00000 s] incompetent
+   - [#  10] SIR source_to_mutate: [0.00000 s] incompetent
+   - [#  11] SIR source_to_mutate: [0.00000 s] incompetent
+[*] Mutation score [0.92097 s]: 100.0%
+   - all: 11
+   - killed: 7 (63.6%)
+   - survived: 0 (0.0%)
+   - incompetent: 4 (36.4%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py       5      0      2      0   100%
+-----------------------------------------------------------------
+TOTAL                     5      0      2      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 100.00%

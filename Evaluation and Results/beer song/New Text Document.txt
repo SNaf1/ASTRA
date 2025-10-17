@@ -1,0 +1,77 @@
+[*] Start mutants generation and execution:
+   - [#   1] AOD source_to_mutate: [0.28851 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#   2] AOR source_to_mutate: [0.18756 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#   3] AOR source_to_mutate: [0.17113 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#   4] AOR source_to_mutate: [0.17250 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [#   5] AOR source_to_mutate: [0.36403 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#   6] AOR source_to_mutate: [0.19571 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#   7] COI source_to_mutate: [0.21773 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#   8] COI source_to_mutate: [0.17890 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#   9] COI source_to_mutate: [0.17447 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  10] COI source_to_mutate: [0.21112 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  11] CRP source_to_mutate: [0.18764 s] survived
+   - [#  12] CRP source_to_mutate: [0.17147 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [#  13] CRP source_to_mutate: [0.23535 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [#  14] CRP source_to_mutate: [0.16865 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [#  15] CRP source_to_mutate: [0.16695 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  16] CRP source_to_mutate: [0.16936 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  17] CRP source_to_mutate: [0.16561 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  18] CRP source_to_mutate: [0.20895 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  19] CRP source_to_mutate: [0.21262 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [#  20] CRP source_to_mutate: [0.19149 s] killed by test_generated_mutants.py::test_recite_from_zero
+   - [#  21] CRP source_to_mutate: [0.18498 s] killed by test_generated_mutants.py::test_recite_from_zero
+   - [#  22] CRP source_to_mutate: [0.16648 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  23] CRP source_to_mutate: [0.16132 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  24] CRP source_to_mutate: [0.15842 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  25] CRP source_to_mutate: [0.15216 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  26] CRP source_to_mutate: [0.16817 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  27] CRP source_to_mutate: [0.15916 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [#  28] CRP source_to_mutate: [0.16442 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [#  29] CRP source_to_mutate: [0.15100 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  30] CRP source_to_mutate: [0.16307 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  31] CRP source_to_mutate: [0.15319 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  32] CRP source_to_mutate: [0.17876 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  33] CRP source_to_mutate: [0.15372 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  34] CRP source_to_mutate: [0.15606 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [#  35] CRP source_to_mutate: [0.15415 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [#  36] CRP source_to_mutate: [0.15190 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  37] CRP source_to_mutate: [0.15484 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  38] CRP source_to_mutate: [0.15330 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  39] CRP source_to_mutate: [0.17241 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  40] CRP source_to_mutate: [0.15177 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  41] CRP source_to_mutate: [0.15942 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [#  42] CRP source_to_mutate: [0.15216 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  43] CRP source_to_mutate: [0.15934 s] killed by test_generated_mutants.py::test_recite_from_zero
+   - [#  44] ROR source_to_mutate: [0.15899 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [#  45] ROR source_to_mutate: [0.17814 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  46] ROR source_to_mutate: [0.15337 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  47] ROR source_to_mutate: [0.27741 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  48] ROR source_to_mutate: [0.17277 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [#  49] ROR source_to_mutate: [0.15424 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  50] ROR source_to_mutate: [0.16189 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  51] ROR source_to_mutate: [0.26264 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  52] ROR source_to_mutate: [0.17825 s] killed by test_generated_mutants.py::test_recite_from_zero
+[*] Mutation score [9.84443 s]: 98.1%
+   - all: 52
+   - killed: 51 (98.1%)
+   - survived: 1 (1.9%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      23      0     10      0   100%
+-----------------------------------------------------------------
+TOTAL                    23      0     10      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 98.10%

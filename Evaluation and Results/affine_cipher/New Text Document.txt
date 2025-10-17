@@ -1,0 +1,84 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 36 tests passed:
+   - test_generated_mutants [0.28617 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR source_to_mutate: [0.31346 s] killed by test_generated_mutants.py::test_mod_inverse_coprime
+   - [#   2] AOR source_to_mutate: [0.23773 s] killed by test_generated_mutants.py::test_mod_inverse_coprime
+   - [#   3] AOR source_to_mutate: [0.21509 s] killed by test_generated_mutants.py::test_mod_inverse_coprime
+   - [#   4] AOR source_to_mutate: [0.20965 s] killed by test_generated_mutants.py::test_mod_inverse_coprime
+   - [#   5] AOR source_to_mutate: [0.18423 s] killed by test_generated_mutants.py::test_mod_inverse_coprime
+   - [#   6] AOR source_to_mutate: [0.25107 s] survived
+   - [#   7] AOR source_to_mutate: [0.23766 s] survived
+   - [#   8] AOR source_to_mutate: [0.20854 s] survived
+   - [#   9] AOR source_to_mutate: [0.22465 s] survived
+   - [#  10] AOR source_to_mutate: [0.27590 s] survived
+   - [#  11] AOR source_to_mutate: [0.24411 s] survived
+   - [#  12] AOR source_to_mutate: [0.23343 s] survived
+   - [#  13] AOR source_to_mutate: [0.21282 s] survived
+   - [#  14] AOR source_to_mutate: [0.20958 s] survived
+   - [#  15] AOR source_to_mutate: [0.19597 s] survived
+   - [#  16] AOR source_to_mutate: [0.21579 s] survived
+   - [#  17] AOR source_to_mutate: [0.20176 s] survived
+   - [#  18] AOR source_to_mutate: [0.22051 s] survived
+   - [#  19] BCR source_to_mutate: [0.19214 s] survived
+   - [#  20] COI source_to_mutate: [0.16610 s] killed by test_generated_mutants.py::test_mod_inverse_coprime
+   - [#  21] COI source_to_mutate: [0.16885 s] killed by test_generated_mutants.py::test_translate_encode
+   - [#  22] COI source_to_mutate: [0.21946 s] survived
+   - [#  23] COI source_to_mutate: [0.20370 s] survived
+   - [#  24] COI source_to_mutate: [0.19022 s] survived
+   - [#  25] COI source_to_mutate: [0.19906 s] survived
+   - [#  26] CRP source_to_mutate: [0.19440 s] survived
+   - [#  27] CRP source_to_mutate: [0.20364 s] killed by test_generated_mutants.py::test_translate_non_coprime_raises_error
+   - [#  28] CRP source_to_mutate: [0.20223 s] survived
+   - [#  29] CRP source_to_mutate: [0.18148 s] killed by test_generated_mutants.py::test_mod_inverse_coprime
+   - [#  30] CRP source_to_mutate: [0.17021 s] killed by test_generated_mutants.py::test_mod_inverse_not_coprime
+   - [#  31] CRP source_to_mutate: [0.18377 s] killed by test_generated_mutants.py::test_translate_encode
+   - [#  32] CRP source_to_mutate: [0.17046 s] killed by test_generated_mutants.py::test_translate_encode
+   - [#  33] CRP source_to_mutate: [0.16432 s] killed by test_generated_mutants.py::test_translate_encode
+   - [#  34] CRP source_to_mutate: [0.21722 s] survived
+   - [#  35] CRP source_to_mutate: [0.22982 s] survived
+   - [#  36] CRP source_to_mutate: [0.19012 s] survived
+   - [#  37] CRP source_to_mutate: [0.19922 s] survived
+   - [#  38] CRP source_to_mutate: [0.18887 s] survived
+   - [#  39] CRP source_to_mutate: [0.32912 s] survived
+   - [#  40] CRP source_to_mutate: [0.20840 s] survived
+   - [#  41] CRP source_to_mutate: [0.19574 s] survived
+   - [#  42] CRP source_to_mutate: [0.19331 s] survived
+   - [#  43] CRP source_to_mutate: [0.20626 s] survived
+   - [#  44] CRP source_to_mutate: [0.22878 s] survived
+   - [#  45] ROR source_to_mutate: [0.15892 s] killed by test_generated_mutants.py::test_mod_inverse_coprime
+   - [#  46] ROR source_to_mutate: [0.20972 s] killed by test_generated_mutants.py::test_translate_encode
+   - [#  47] ROR source_to_mutate: [0.19716 s] survived
+   - [#  48] ROR source_to_mutate: [0.18912 s] survived
+   - [#  49] ROR source_to_mutate: [0.18850 s] survived
+   - [#  50] ROR source_to_mutate: [0.18952 s] survived
+   - [#  51] SIR source_to_mutate: [0.19404 s] survived
+   - [#  52] SIR source_to_mutate: [0.20796 s] survived
+[*] Mutation score [11.32722 s]: 28.8%
+   - all: 52
+   - killed: 15 (28.8%)
+   - survived: 37 (71.2%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      30     14     16      1    46%   18-31, 36
+-----------------------------------------------------------------
+TOTAL                    30     14     16      1    46%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 46%
+[INFO] Mutation Score: 28.80%
+
+--- Analysis Finished ---

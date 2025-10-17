@@ -1,0 +1,42 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 29 tests passed:
+   - test_generated_mutants [0.23413 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR source_to_mutate: [0.25074 s] incompetent
+   - [#   2] COI source_to_mutate: [0.16625 s] killed by test_generated_mutants.py::test_cipher_text_empty
+   - [#   3] CRP source_to_mutate: [0.16930 s] killed by test_generated_mutants.py::test_cipher_text_two_chars
+   - [#   4] CRP source_to_mutate: [0.25147 s] killed by test_generated_mutants.py::test_cipher_text_two_chars
+   - [#   5] CRP source_to_mutate: [0.15557 s] killed by test_generated_mutants.py::test_cipher_text_three_chars
+   - [#   6] CRP source_to_mutate: [0.15750 s] killed by test_generated_mutants.py::test_cipher_text_three_chars
+   - [#   7] CRP source_to_mutate: [0.17756 s] killed by test_generated_mutants.py::test_cipher_text_three_chars
+   - [#   8] CRP source_to_mutate: [0.24999 s] killed by test_generated_mutants.py::test_cipher_text_two_chars
+   - [#   9] ROR source_to_mutate: [0.17514 s] killed by test_generated_mutants.py::test_cipher_text_three_chars
+   - [#  10] ROR source_to_mutate: [0.15831 s] killed by test_generated_mutants.py::test_cipher_text_empty
+   - [#  11] SIR source_to_mutate: [0.16212 s] killed by test_generated_mutants.py::test_cipher_text_three_chars
+   - [#  12] SIR source_to_mutate: [0.18996 s] killed by test_generated_mutants.py::test_cipher_text_three_chars
+[*] Mutation score [2.59937 s]: 100.0%
+   - all: 12
+   - killed: 11 (91.7%)
+   - survived: 0 (0.0%)
+   - incompetent: 1 (8.3%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      13      0      2      0   100%
+-----------------------------------------------------------------
+TOTAL                    13      0      2      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 100.00%

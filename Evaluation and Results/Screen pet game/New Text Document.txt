@@ -1,0 +1,201 @@
+--- Step 5: Running mutation testing with MutPy (Attempt 1) ---
+[INFO] Running MutPy for target: mutation_output\selected_functions.py, tests: mutation_output\test_generated_mutants.py
+[*] Start mutation process:
+   - targets: selected_functions
+   - tests: test_generated_mutants
+[*] 15 tests passed:
+   - test_generated_mutants [0.65463 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOD selected_functions: [0.24041 s] survived
+   - [#   2] AOD selected_functions: [0.20517 s] survived
+   - [#   3] AOD selected_functions: [0.22195 s] survived
+   - [#   4] AOD selected_functions: [0.22843 s] survived
+   - [#   5] AOR selected_functions: [0.21600 s] survived
+   - [#   6] AOR selected_functions: [0.20281 s] survived
+   - [#   7] AOR selected_functions: [0.21751 s] survived
+   - [#   8] AOR selected_functions: [0.26018 s] survived
+   - [#   9] ASR selected_functions: [0.34251 s] killed by test_generated_mutants.py::test_sad_happy_level_positive
+   - [#  10] COD selected_functions: [0.26219 s] killed by test_generated_mutants.py::test_toggle_pupils_eyes_not_crossed
+   - [#  11] COD selected_functions: [0.27161 s] killed by test_generated_mutants.py::test_toggle_tongue_tongue_not_out
+   - [#  12] COI selected_functions: [0.23102 s] killed by test_generated_mutants.py::test_sad_happy_level_positive
+   - [#  13] COI selected_functions: [0.26767 s] killed by test_generated_mutants.py::test_show_happy_within_range
+   - [#  14] COI selected_functions: [0.31054 s] killed by test_generated_mutants.py::test_toggle_pupils_eyes_not_crossed
+   - [#  15] COI selected_functions: [0.26196 s] killed by test_generated_mutants.py::test_toggle_tongue_tongue_not_out
+   - [#  16] CRP selected_functions: [0.22907 s] survived
+   - [#  17] CRP selected_functions: [0.21450 s] survived
+   - [#  18] CRP selected_functions: [0.00000 s] incompetent
+   - [#  19] CRP selected_functions: [0.21016 s] survived
+   - [#  20] CRP selected_functions: [0.24778 s] survived
+   - [#  21] CRP selected_functions: [0.21820 s] survived
+   - [#  22] CRP selected_functions: [0.25867 s] survived
+   - [#  23] CRP selected_functions: [0.21701 s] survived
+   - [#  24] CRP selected_functions: [0.24450 s] survived
+   - [#  25] CRP selected_functions: [0.21036 s] survived
+   - [#  26] CRP selected_functions: [0.20794 s] survived
+   - [#  27] CRP selected_functions: [0.20040 s] survived
+   - [#  28] CRP selected_functions: [0.20023 s] survived
+   - [#  29] CRP selected_functions: [0.22135 s] survived
+   - [#  30] CRP selected_functions: [0.23157 s] survived
+   - [#  31] CRP selected_functions: [0.21680 s] survived
+   - [#  32] CRP selected_functions: [0.25698 s] survived
+   - [#  33] CRP selected_functions: [0.21089 s] survived
+   - [#  34] CRP selected_functions: [0.20317 s] survived
+   - [#  35] CRP selected_functions: [0.19517 s] survived
+   - [#  36] CRP selected_functions: [0.21844 s] survived
+   - [#  37] CRP selected_functions: [0.23121 s] survived
+   - [#  38] CRP selected_functions: [0.20147 s] survived
+   - [#  39] CRP selected_functions: [0.20042 s] survived
+   - [#  40] CRP selected_functions: [0.20793 s] survived
+   - [#  41] CRP selected_functions: [0.21137 s] survived
+   - [#  42] CRP selected_functions: [0.19431 s] survived
+   - [#  43] CRP selected_functions: [0.22979 s] survived
+   - [#  44] CRP selected_functions: [0.22849 s] survived
+   - [#  45] CRP selected_functions: [0.21326 s] survived
+   - [#  46] CRP selected_functions: [0.19974 s] survived
+   - [#  47] CRP selected_functions: [0.20734 s] survived
+   - [#  48] CRP selected_functions: [0.00000 s] incompetent
+   - [#  49] CRP selected_functions: [0.19961 s] survived
+   - [#  50] CRP selected_functions: [0.00000 s] incompetent
+   - [#  51] CRP selected_functions: [0.20726 s] survived
+   - [#  52] CRP selected_functions: [0.21443 s] survived
+   - [#  53] CRP selected_functions: [0.23003 s] survived
+   - [#  54] CRP selected_functions: [0.19704 s] survived
+   - [#  55] CRP selected_functions: [0.19335 s] survived
+   - [#  56] CRP selected_functions: [0.00000 s] incompetent
+   - [#  57] CRP selected_functions: [0.20794 s] survived
+   - [#  58] CRP selected_functions: [0.00000 s] incompetent
+   - [#  59] CRP selected_functions: [0.20416 s] survived
+   - [#  60] CRP selected_functions: [0.19590 s] survived
+   - [#  61] CRP selected_functions: [0.22138 s] survived
+   - [#  62] CRP selected_functions: [0.20742 s] survived
+   - [#  63] CRP selected_functions: [0.21711 s] survived
+   - [#  64] CRP selected_functions: [0.00000 s] incompetent
+   - [#  65] CRP selected_functions: [0.20466 s] survived
+   - [#  66] CRP selected_functions: [0.00000 s] incompetent
+   - [#  67] CRP selected_functions: [0.20202 s] survived
+   - [#  68] CRP selected_functions: [0.20602 s] survived
+   - [#  69] CRP selected_functions: [0.21230 s] survived
+   - [#  70] CRP selected_functions: [0.22339 s] survived
+   - [#  71] CRP selected_functions: [0.19934 s] survived
+   - [#  72] CRP selected_functions: [0.00000 s] incompetent
+   - [#  73] CRP selected_functions: [0.21704 s] survived
+   - [#  74] CRP selected_functions: [0.00000 s] incompetent
+   - [#  75] CRP selected_functions: [0.20797 s] survived
+   - [#  76] CRP selected_functions: [0.19501 s] survived
+   - [#  77] CRP selected_functions: [0.20073 s] survived
+   - [#  78] CRP selected_functions: [0.22828 s] survived
+   - [#  79] CRP selected_functions: [0.20737 s] survived
+   - [#  80] CRP selected_functions: [0.20202 s] survived
+   - [#  81] CRP selected_functions: [0.21650 s] survived
+   - [#  82] CRP selected_functions: [0.00000 s] incompetent
+   - [#  83] CRP selected_functions: [0.20735 s] survived
+   - [#  84] CRP selected_functions: [0.22537 s] survived
+   - [#  85] CRP selected_functions: [0.19487 s] survived
+   - [#  86] CRP selected_functions: [0.19529 s] survived
+   - [#  87] CRP selected_functions: [0.28221 s] survived
+   - [#  88] CRP selected_functions: [0.20544 s] survived
+   - [#  89] CRP selected_functions: [0.21889 s] survived
+   - [#  90] CRP selected_functions: [0.00000 s] incompetent
+   - [#  91] CRP selected_functions: [0.20113 s] survived
+   - [#  92] CRP selected_functions: [0.21162 s] survived
+   - [#  93] CRP selected_functions: [0.20570 s] survived
+   - [#  94] CRP selected_functions: [0.21498 s] survived
+   - [#  95] CRP selected_functions: [0.21344 s] survived
+   - [#  96] CRP selected_functions: [0.20661 s] survived
+   - [#  97] CRP selected_functions: [0.22239 s] survived
+   - [#  98] CRP selected_functions: [0.00000 s] incompetent
+   - [#  99] CRP selected_functions: [0.19507 s] survived
+   - [# 100] CRP selected_functions: [0.21689 s] survived
+   - [# 101] CRP selected_functions: [0.20484 s] survived
+   - [# 102] CRP selected_functions: [0.23989 s] survived
+   - [# 103] CRP selected_functions: [0.20889 s] survived
+   - [# 104] CRP selected_functions: [0.00000 s] incompetent
+   - [# 105] CRP selected_functions: [0.19412 s] survived
+   - [# 106] CRP selected_functions: [0.00000 s] incompetent
+   - [# 107] CRP selected_functions: [0.26109 s] survived
+   - [# 108] CRP selected_functions: [0.22554 s] survived
+   - [# 109] CRP selected_functions: [0.21952 s] survived
+   - [# 110] CRP selected_functions: [0.20776 s] survived
+   - [# 111] CRP selected_functions: [0.20559 s] survived
+   - [# 112] CRP selected_functions: [0.00000 s] incompetent
+   - [# 113] CRP selected_functions: [0.20383 s] survived
+   - [# 114] CRP selected_functions: [0.00000 s] incompetent
+   - [# 115] CRP selected_functions: [0.19675 s] survived
+   - [# 116] CRP selected_functions: [0.21557 s] survived
+   - [# 117] CRP selected_functions: [0.22652 s] survived
+   - [# 118] CRP selected_functions: [0.21217 s] survived
+   - [# 119] CRP selected_functions: [0.20225 s] survived
+   - [# 120] CRP selected_functions: [0.00000 s] incompetent
+   - [# 121] CRP selected_functions: [0.20586 s] survived
+   - [# 122] CRP selected_functions: [0.00000 s] incompetent
+   - [# 123] CRP selected_functions: [0.22180 s] survived
+   - [# 124] CRP selected_functions: [0.21083 s] survived
+   - [# 125] CRP selected_functions: [0.20813 s] survived
+   - [# 126] CRP selected_functions: [0.22839 s] survived
+   - [# 127] CRP selected_functions: [0.22024 s] survived
+   - [# 128] CRP selected_functions: [0.00000 s] incompetent
+   - [# 129] CRP selected_functions: [0.19946 s] survived
+   - [# 130] CRP selected_functions: [0.00000 s] incompetent
+   - [# 131] CRP selected_functions: [0.21621 s] survived
+   - [# 132] CRP selected_functions: [0.20958 s] survived
+   - [# 133] CRP selected_functions: [0.20308 s] survived
+   - [# 134] CRP selected_functions: [0.20760 s] survived
+   - [# 135] CRP selected_functions: [0.23120 s] survived
+   - [# 136] CRP selected_functions: [0.21240 s] survived
+   - [# 137] CRP selected_functions: [0.22196 s] survived
+   - [# 138] CRP selected_functions: [0.20870 s] killed by test_generated_mutants.py::test_sad_happy_level_positive
+   - [# 139] CRP selected_functions: [0.22095 s] survived
+   - [# 140] CRP selected_functions: [0.22449 s] survived
+   - [# 141] CRP selected_functions: [0.24309 s] survived
+   - [# 142] CRP selected_functions: [0.24359 s] survived
+   - [# 143] CRP selected_functions: [0.20404 s] survived
+   - [# 144] CRP selected_functions: [0.19346 s] killed by test_generated_mutants.py::test_show_happy_within_range
+   - [# 145] CRP selected_functions: [0.22449 s] survived
+   - [# 146] CRP selected_functions: [0.22483 s] survived
+   - [# 147] CRP selected_functions: [0.19695 s] survived
+   - [# 148] CRP selected_functions: [0.27984 s] survived
+   - [# 149] CRP selected_functions: [0.23728 s] survived
+   - [# 150] CRP selected_functions: [0.20299 s] survived
+   - [# 151] CRP selected_functions: [0.21434 s] survived
+   - [# 152] CRP selected_functions: [0.19798 s] survived
+   - [# 153] CRP selected_functions: [0.19639 s] survived
+   - [# 154] CRP selected_functions: [0.20544 s] survived
+   - [# 155] CRP selected_functions: [0.20768 s] survived
+   - [# 156] CRP selected_functions: [0.19501 s] survived
+   - [# 157] CRP selected_functions: [0.23596 s] survived
+   - [# 158] CRP selected_functions: [0.20303 s] survived
+   - [# 159] CRP selected_functions: [0.21042 s] survived
+   - [# 160] CRP selected_functions: [0.20762 s] survived
+   - [# 161] LCR selected_functions: [0.19053 s] killed by test_generated_mutants.py::test_show_happy_outside_range_x_low
+   - [# 162] LCR selected_functions: [0.19517 s] killed by test_generated_mutants.py::test_show_happy_outside_range_x_low
+   - [# 163] LCR selected_functions: [0.22429 s] killed by test_generated_mutants.py::test_show_happy_outside_range_y_low
+   - [# 164] ROR selected_functions: [0.20398 s] killed by test_generated_mutants.py::test_sad_happy_level_positive
+   - [# 165] ROR selected_functions: [0.20826 s] killed by test_generated_mutants.py::test_show_happy_within_range
+   - [# 166] ROR selected_functions: [0.21524 s] survived
+   - [# 167] ROR selected_functions: [0.19572 s] killed by test_generated_mutants.py::test_show_happy_within_range
+   - [# 168] ROR selected_functions: [0.20379 s] survived
+   - [# 169] ROR selected_functions: [0.20918 s] killed by test_generated_mutants.py::test_show_happy_within_range
+   - [# 170] ROR selected_functions: [0.22937 s] survived
+   - [# 171] ROR selected_functions: [0.21156 s] killed by test_generated_mutants.py::test_show_happy_within_range
+   - [# 172] ROR selected_functions: [0.19611 s] survived
+   - [# 173] ROR selected_functions: [0.20580 s] survived
+   - [# 174] ROR selected_functions: [0.28283 s] survived
+[*] Mutation score [45.92737 s]: 11.0%
+   - all: 174
+   - killed: 17 (9.8%)
+   - survived: 137 (78.7%)
+   - incompetent: 20 (11.5%)
+   - timeout: 0 (0.0%)
+
+
+[SUCCESS] Tests passed on attempt 1! Mutation score: 11.0%
+[INFO] Code saved to: mutation_output\test_generated_mutants.py
+
+[INFO] Saved final version of test code to: mutation_output\test_generated_mutants.py
+
+--- Analysis Complete ---
+  - Input file: H:\Uni work\Thesis\AMT\example_input.py
+  - Selected functions for testing: blink, cheeky, hide_happy, sad, show_happy, toggle_eyes, toggle_pupils, toggle_tongue
+  - Final test file: mutation_output\test_generated_mutants.py
+  - Final Status: SUCCESS
+  - Final Mutation Score: 11.00%

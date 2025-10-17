@@ -1,0 +1,41 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 11 tests passed:
+   - test_generated_mutants [0.11140 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR source_to_mutate: [0.43743 s] killed by test_generated_mutants.py::test_fibfib_3
+   - [#   2] AOR source_to_mutate: [0.08772 s] killed by test_generated_mutants.py::test_fibfib_4
+   - [#   3] AOR source_to_mutate: [0.09660 s] killed by test_generated_mutants.py::test_fibfib_3
+   - [#   4] AOR source_to_mutate: [0.08793 s] killed by test_generated_mutants.py::test_fibfib_5
+   - [#   5] AOR source_to_mutate: [0.09005 s] killed by test_generated_mutants.py::test_fibfib_3
+   - [#   6] COI source_to_mutate: [0.08474 s] killed by test_generated_mutants.py::test_fibfib_2
+   - [#   7] COI source_to_mutate: [0.08585 s] killed by test_generated_mutants.py::test_fibfib_2
+   - [#   8] COI source_to_mutate: [0.08015 s] killed by test_generated_mutants.py::test_fibfib_4
+   - [#   9] ROR source_to_mutate: [0.08444 s] killed by test_generated_mutants.py::test_fibfib_2
+   - [#  10] ROR source_to_mutate: [0.08461 s] killed by test_generated_mutants.py::test_fibfib_2
+   - [#  11] ROR source_to_mutate: [0.08318 s] killed by test_generated_mutants.py::test_fibfib_4
+[*] Mutation score [1.45085 s]: 100.0%
+   - all: 11
+   - killed: 11 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py       9      0      6      0   100%
+-----------------------------------------------------------------
+TOTAL                     9      0      6      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 100.00%

@@ -1,0 +1,42 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 23 tests passed:
+   - test_generated_mutants [0.12768 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR source_to_mutate: [0.18318 s] killed by test_generated_mutants.py::test_largest_prime_factor_example_1
+   - [#   2] AOR source_to_mutate: [0.09674 s] killed by test_generated_mutants.py::test_largest_prime_factor_example_1
+   - [#   3] AOR source_to_mutate: [0.10165 s] survived
+   - [#   4] AOR source_to_mutate: [0.09039 s] killed by test_generated_mutants.py::test_largest_prime_factor_example_1
+   - [#   5] COI source_to_mutate: [0.09185 s] killed by test_generated_mutants.py::test_largest_prime_factor_example_1
+   - [#   6] COI source_to_mutate: [0.08433 s] killed by test_generated_mutants.py::test_largest_prime_factor_example_1
+   - [#   7] COI source_to_mutate: [0.08910 s] killed by test_generated_mutants.py::test_largest_prime_factor_example_1
+   - [#   8] LCR source_to_mutate: [0.48384 s] killed by test_generated_mutants.py::test_largest_prime_factor_example_1
+   - [#   9] ROR source_to_mutate: [0.08458 s] killed by test_generated_mutants.py::test_largest_prime_factor_example_1
+   - [#  10] ROR source_to_mutate: [0.09003 s] killed by test_generated_mutants.py::test_largest_prime_factor_example_2
+   - [#  11] ROR source_to_mutate: [0.08895 s] killed by test_generated_mutants.py::test_largest_prime_factor_example_1
+   - [#  12] ROR source_to_mutate: [0.48908 s] killed by test_generated_mutants.py::test_largest_prime_factor_example_1
+[*] Mutation score [2.15244 s]: 91.7%
+   - all: 12
+   - killed: 11 (91.7%)
+   - survived: 1 (8.3%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      14      1     10      1    92%   10
+-----------------------------------------------------------------
+TOTAL                    14      1     10      1    92%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 92%
+[INFO] Mutation Score: 91.70%

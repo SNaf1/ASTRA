@@ -1,0 +1,161 @@
+--- Step 3: Running mutation testing (Attempt 30/30) ---
+[INFO] Running MutPy for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 38 tests passed:
+   - test_generated_mutants [0.52012 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOD source_to_mutate: [0.31437 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#   2] AOR source_to_mutate: [0.25890 s] survived
+   - [#   3] AOR source_to_mutate: [0.18666 s] killed by test_generated_mutants.py::test_largest_palindrome_from_smaller_numbers
+   - [#   4] AOR source_to_mutate: [0.22201 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#   5] AOR source_to_mutate: [0.16906 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#   6] AOR source_to_mutate: [0.20306 s] killed by test_generated_mutants.py::test_largest_palindrome_from_increasing_range
+   - [#   7] AOR source_to_mutate: [0.21242 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#   8] AOR source_to_mutate: [0.21760 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#   9] AOR source_to_mutate: [0.19789 s] killed by test_generated_mutants.py::test_largest_palindrome_from_smaller_numbers
+   - [#  10] AOR source_to_mutate: [0.18623 s] killed by test_generated_mutants.py::test_largest_palindrome_from_increasing_range
+   - [#  11] AOR source_to_mutate: [0.29291 s] survived
+   - [#  12] AOR source_to_mutate: [0.24037 s] killed by test_generated_mutants.py::test_get_extreme_palindrome_with_factors_no_palindromes
+   - [#  13] AOR source_to_mutate: [0.21869 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  14] AOR source_to_mutate: [0.28941 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  15] AOR source_to_mutate: [0.24253 s] survived
+   - [#  16] AOR source_to_mutate: [0.17984 s] killed by test_generated_mutants.py::test_largest_palindrome_from_a_bigger_range
+   - [#  17] AOR source_to_mutate: [0.19317 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  18] AOR source_to_mutate: [0.32924 s] survived
+   - [#  19] AOR source_to_mutate: [0.29904 s] survived
+   - [#  20] AOR source_to_mutate: [0.20293 s] killed by test_generated_mutants.py::test_largest_palindrome_from_a_bigger_range
+   - [#  21] AOR source_to_mutate: [0.24992 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  22] AOR source_to_mutate: [0.27808 s] killed by test_generated_mutants.py::test_largest_palindrome_from_larger_numbers
+   - [#  23] AOR source_to_mutate: [0.20653 s] killed by test_generated_mutants.py::test_largest_palindrome_from_larger_numbers
+   - [#  24] AOR source_to_mutate: [0.19797 s] killed by test_generated_mutants.py::test_largest_palindrome_from_a_bigger_range
+   - [#  25] AOR source_to_mutate: [0.19663 s] survived
+   - [#  26] AOR source_to_mutate: [0.19290 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  27] AOR source_to_mutate: [0.17921 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  28] AOR source_to_mutate: [0.18445 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  29] AOR source_to_mutate: [0.17773 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  30] AOR source_to_mutate: [0.15983 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  31] AOR source_to_mutate: [0.18203 s] killed by test_generated_mutants.py::test_largest_palindrome_from_a_bigger_range
+   - [#  32] AOR source_to_mutate: [0.24064 s] killed by test_generated_mutants.py::test_largest_palindrome_from_larger_numbers
+   - [#  33] AOR source_to_mutate: [0.20410 s] killed by test_generated_mutants.py::test_largest_palindrome_from_larger_numbers
+   - [#  34] AOR source_to_mutate: [0.18512 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  35] AOR source_to_mutate: [0.19167 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  36] AOR source_to_mutate: [0.16193 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  37] AOR source_to_mutate: [0.18449 s] killed by test_generated_mutants.py::test_largest_palindrome_from_increasing_range
+   - [#  38] AOR source_to_mutate: [0.22315 s] killed by test_generated_mutants.py::test_smallest_palindrome_from_single_number
+   - [#  39] AOR source_to_mutate: [0.21210 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  40] AOR source_to_mutate: [0.21512 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  41] ASR source_to_mutate: [0.28284 s] killed by test_generated_mutants.py::test_largest_palindrome_from_a_three_digit_range
+   - [#  42] ASR source_to_mutate: [0.21027 s] killed by test_generated_mutants.py::test_largest_palindrome_from_a_bigger_range
+   - [#  43] ASR source_to_mutate: [0.28577 s] killed by test_generated_mutants.py::test_largest_palindrome_from_a_three_digit_range
+   - [#  44] ASR source_to_mutate: [0.23485 s] killed by test_generated_mutants.py::test_largest_palindrome_from_increasing_range
+   - [#  45] ASR source_to_mutate: [0.20806 s] killed by test_generated_mutants.py::test_largest_palindrome_from_a_bigger_range
+   - [#  46] ASR source_to_mutate:    - [#  47] ASR source_to_mutate:    - [#  48] ASR source_to_mutate:    - [#  49] BCR source_to_mutate: [0.17992 s] killed by test_generated_mutants.py::test_largest_palindrome_from_smaller_numbers
+   - [#  50] BCR source_to_mutate: [0.20161 s] survived
+   - [#  51] BCR source_to_mutate: [0.21364 s] survived
+   - [#  52] COD source_to_mutate: [0.15811 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  53] COD source_to_mutate: [0.15829 s] killed by test_generated_mutants.py::test_largest_palindrome_from_smaller_numbers
+   - [#  54] COD source_to_mutate: [0.16051 s] killed by test_generated_mutants.py::test_largest_palindrome_from_a_bigger_range
+   - [#  55] COD source_to_mutate: [0.16292 s] killed by test_generated_mutants.py::test_largest_palindrome_from_a_bigger_range
+   - [#  56] COI source_to_mutate: [0.15916 s] killed by test_generated_mutants.py::test_largest_palindrome_from_smaller_numbers
+   - [#  57] COI source_to_mutate: [0.18024 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  58] COI source_to_mutate:    - [#  59] COI source_to_mutate: [0.17390 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  60] COI source_to_mutate: [0.16469 s] killed by test_generated_mutants.py::test_largest_palindrome_from_a_bigger_range
+   - [#  61] COI source_to_mutate: [0.16934 s] killed by test_generated_mutants.py::test_smallest_palindrome_from_single_number
+   - [#  62] COI source_to_mutate: [0.17257 s] killed by test_generated_mutants.py::test_smallest_palindrome_from_single_number
+   - [#  63] COI source_to_mutate: [0.22262 s] survived
+   - [#  64] COI source_to_mutate: [0.15532 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  65] COI source_to_mutate: [0.15379 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  66] COI source_to_mutate: [0.16172 s] killed by test_generated_mutants.py::test_largest_palindrome_from_a_bigger_range
+   - [#  67] CRP source_to_mutate: [0.16045 s] killed by test_generated_mutants.py::test_largest_palindrome_from_smaller_numbers
+   - [#  68] CRP source_to_mutate: [0.17444 s] killed by test_generated_mutants.py::test_largest_palindrome_from_smaller_numbers
+   - [#  69] CRP source_to_mutate: [0.21230 s] survived
+   - [#  70] CRP source_to_mutate: [0.20212 s] survived
+   - [#  71] CRP source_to_mutate: [0.16147 s] killed by test_generated_mutants.py::test_largest_palindrome_from_smaller_numbers
+   - [#  72] CRP source_to_mutate: [0.15620 s] killed by test_generated_mutants.py::test_largest_palindrome_from_smaller_numbers
+   - [#  73] CRP source_to_mutate: [0.18362 s] killed by test_generated_mutants.py::test_get_extreme_palindrome_with_factors_no_palindromes
+   - [#  74] CRP source_to_mutate: [0.17945 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  75] CRP source_to_mutate: [0.16684 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  76] CRP source_to_mutate: [0.15624 s] killed by test_generated_mutants.py::test_largest_palindrome_from_smaller_numbers
+   - [#  77] CRP source_to_mutate: [0.16349 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  78] CRP source_to_mutate: [0.16843 s] killed by test_generated_mutants.py::test_largest_palindrome_from_increasing_range
+   - [#  79] CRP source_to_mutate: [0.17226 s] killed by test_generated_mutants.py::test_largest_palindrome_from_a_bigger_range
+   - [#  80] CRP source_to_mutate: [0.20182 s] killed by test_generated_mutants.py::test_largest_palindrome_from_a_bigger_range
+   - [#  81] CRP source_to_mutate: [0.16439 s] killed by test_generated_mutants.py::test_largest_palindrome_from_a_bigger_range
+   - [#  82] CRP source_to_mutate: [0.15622 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  83] CRP source_to_mutate: [0.18484 s] killed by test_generated_mutants.py::test_smallest_palindrome_from_smaller_numbers
+   - [#  84] CRP source_to_mutate: [0.25081 s] killed by test_generated_mutants.py::test_smallest_palindrome_from_smaller_numbers
+   - [#  85] CRP source_to_mutate: [0.18244 s] killed by test_generated_mutants.py::test_largest_palindrome_from_a_three_digit_range
+   - [#  86] CRP source_to_mutate:    - [#  87] CRP source_to_mutate: [0.17899 s] killed by test_generated_mutants.py::test_largest_palindrome_from_increasing_range
+   - [#  88] CRP source_to_mutate: [0.16524 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [#  89] CRP source_to_mutate: [0.20257 s] survived
+   - [#  90] CRP source_to_mutate: [0.17808 s] killed by test_generated_mutants.py::test_get_extreme_palindrome_with_factors_no_palindromes
+   - [#  91] CRP source_to_mutate: [0.20153 s] killed by test_generated_mutants.py::test_get_extreme_palindrome_with_factors_no_palindromes
+   - [#  92] CRP source_to_mutate: [0.20337 s] survived
+   - [#  93] CRP source_to_mutate: [0.19453 s] survived
+   - [#  94] CRP source_to_mutate: [0.20615 s] survived
+   - [#  95] CRP source_to_mutate: [0.17040 s] killed by test_generated_mutants.py::test_largest_palindrome_from_a_three_digit_range
+   - [#  96] CRP source_to_mutate: [0.16666 s] killed by test_generated_mutants.py::test_largest_palindrome_from_smaller_numbers
+   - [#  97] CRP source_to_mutate: [0.19187 s] killed by test_generated_mutants.py::test_largest_palindrome_from_a_bigger_range
+   - [#  98] CRP source_to_mutate: [0.20270 s] survived
+   - [#  99] CRP source_to_mutate: [0.18894 s] killed by test_generated_mutants.py::test_get_extreme_palindrome_with_factors_smallest
+   - [# 100] CRP source_to_mutate: [0.16429 s] killed by test_generated_mutants.py::test_largest_palindrome_from_larger_numbers
+   - [# 101] CRP source_to_mutate: [0.16483 s] killed by test_generated_mutants.py::test_largest_palindrome_from_larger_numbers
+   - [# 102] CRP source_to_mutate: [0.21276 s] survived
+   - [# 103] CRP source_to_mutate: [0.19973 s] survived
+   - [# 104] CRP source_to_mutate: [0.19945 s] survived
+   - [# 105] CRP source_to_mutate: [0.19753 s] survived
+   - [# 106] CRP source_to_mutate: [0.15936 s] killed by test_generated_mutants.py::test_largest_palindrome_from_larger_numbers
+   - [# 107] ROR source_to_mutate: [0.16667 s] killed by test_generated_mutants.py::test_largest_palindrome_from_smaller_numbers
+   - [# 108] ROR source_to_mutate: [0.18369 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [# 109] ROR source_to_mutate: [0.16461 s] killed by test_generated_mutants.py::test_largest_palindrome_from_smaller_numbers
+   - [# 110] ROR source_to_mutate: [0.15745 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [# 111] ROR source_to_mutate: [0.16132 s] killed by test_generated_mutants.py::test_largest_palindrome_from_smaller_numbers
+   - [# 112] ROR source_to_mutate: [0.15650 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [# 113] ROR source_to_mutate: [0.17668 s] killed by test_generated_mutants.py::test_largest_palindrome_from_smaller_numbers
+   - [# 114] ROR source_to_mutate: [0.16208 s] killed by test_generated_mutants.py::test_largest_palindrome_from_larger_numbers
+   - [# 115] ROR source_to_mutate: [0.16212 s] killed by test_generated_mutants.py::test_largest_palindrome_from_increasing_range
+   - [# 116] ROR source_to_mutate:    - [# 117] ROR source_to_mutate: [0.17326 s] killed by test_generated_mutants.py::test_largest_palindrome_from_smaller_numbers
+   - [# 118] ROR source_to_mutate: [0.16919 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [# 119] ROR source_to_mutate: [0.18550 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [# 120] ROR source_to_mutate: [0.17726 s] killed by test_generated_mutants.py::test_get_extreme_palindrome_with_factors_smallest
+   - [# 121] ROR source_to_mutate: [0.17030 s] killed by test_generated_mutants.py::test_smallest_palindrome_from_single_number
+   - [# 122] ROR source_to_mutate: [0.18672 s] killed by test_generated_mutants.py::test_get_extreme_palindrome_with_factors_smallest
+   - [# 123] ROR source_to_mutate: [0.18541 s] killed by test_generated_mutants.py::test_smallest_palindrome_from_single_number
+   - [# 124] ROR source_to_mutate: [0.17945 s] killed by test_generated_mutants.py::test_get_extreme_palindrome_with_factors_smallest
+   - [# 125] ROR source_to_mutate: [0.19404 s] killed by test_generated_mutants.py::test_smallest_palindrome_from_single_number
+   - [# 126] ROR source_to_mutate: [0.20703 s] survived
+   - [# 127] ROR source_to_mutate: [0.19586 s] survived
+   - [# 128] ROR source_to_mutate: [0.15976 s] killed by test_generated_mutants.py::test_largest_palindrome_from_smaller_numbers
+   - [# 129] ROR source_to_mutate: [0.17156 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [# 130] ROR source_to_mutate: [0.19855 s] killed by test_generated_mutants.py::test_largest_palindrome_from_smaller_numbers
+   - [# 131] ROR source_to_mutate: [0.20439 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [# 132] ROR source_to_mutate: [0.18975 s] killed by test_generated_mutants.py::test_largest_palindrome_from_larger_numbers
+   - [# 133] ROR source_to_mutate: [0.23846 s] killed by test_generated_mutants.py::test_largest_palindrome_from_single_number
+   - [# 134] ROR source_to_mutate: [0.32385 s] killed by test_generated_mutants.py::test_largest_palindrome_from_a_bigger_range
+   - [# 135] ROR source_to_mutate: [0.24669 s] survived
+[*] Mutation score [56.48167 s]: 83.0%
+   - all: 135
+   - killed: 106 (78.5%)
+   - survived: 23 (17.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 6 (4.4%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      58      4     24      4    88%   16->25, 26, 83-87, 98
+-----------------------------------------------------------------
+TOTAL                    58      4     24      4    88%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 88%
+[INFO] Mutation Score: 83.00%

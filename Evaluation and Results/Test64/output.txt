@@ -1,0 +1,40 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 37 tests passed:
+   - test_generated_mutants [0.13359 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOD source_to_mutate: [0.18013 s] killed by test_generated_mutants.py::test_y_at_end_lowercase
+   - [#   2] AOD source_to_mutate: [0.08910 s] killed by test_generated_mutants.py::test_y_at_end_uppercase
+   - [#   3] AOR source_to_mutate: [0.08984 s] killed by test_generated_mutants.py::test_y_at_end_lowercase
+   - [#   4] AOR source_to_mutate: [0.08943 s] killed by test_generated_mutants.py::test_y_at_end_uppercase
+   - [#   5] ASR source_to_mutate: [0.08581 s] killed by test_generated_mutants.py::test_y_at_end_lowercase
+   - [#   6] COI source_to_mutate: [0.08557 s] killed by test_generated_mutants.py::test_no_vowels
+   - [#   7] COI source_to_mutate: [0.08624 s] killed by test_generated_mutants.py::test_no_vowels
+   - [#   8] LCR source_to_mutate: [0.08628 s] killed by test_generated_mutants.py::test_y_at_end_lowercase
+   - [#   9] ROR source_to_mutate: [0.08183 s] killed by test_generated_mutants.py::test_no_vowels
+   - [#  10] ROR source_to_mutate: [0.08167 s] killed by test_generated_mutants.py::test_no_vowels
+[*] Mutation score [1.13256 s]: 100.0%
+   - all: 10
+   - killed: 10 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py       7      0      2      0   100%
+-----------------------------------------------------------------
+TOTAL                     7      0      2      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 100.00%

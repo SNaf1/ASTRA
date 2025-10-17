@@ -1,0 +1,129 @@
+[*] Start mutants generation and execution:
+   - [#   1] AOD source_to_mutate: [0.19587 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#   2] AOR source_to_mutate: [0.08670 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#   3] AOR source_to_mutate: [0.08176 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#   4] AOR source_to_mutate: [0.09149 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [#   5] AOR source_to_mutate: [0.08150 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#   6] AOR source_to_mutate: [0.08758 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#   7] COI source_to_mutate: [0.08462 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#   8] COI source_to_mutate: [0.07940 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#   9] COI source_to_mutate: [0.08184 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  10] COI source_to_mutate: [0.09591 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  11] ROR source_to_mutate: [0.08789 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [#  12] ROR source_to_mutate: [0.09424 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  13] ROR source_to_mutate: [0.09087 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  14] ROR source_to_mutate: [0.09507 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  15] ROR source_to_mutate: [0.09711 s] killed by test_generated_mutants.py::test_recite_multiple_verses
+   - [#  16] ROR source_to_mutate: [0.08608 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  17] ROR source_to_mutate: [0.09249 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  18] ROR source_to_mutate: [0.09129 s] killed by test_generated_mutants.py::test_recite_single_verse
+   - [#  19] ROR source_to_mutate: [0.08332 s] killed by test_generated_mutants.py::test_recite_from_zero
+[*] Mutation score [2.00835 s]: 100.0%
+   - all: 19
+   - killed: 19 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      23      0     10      0   100%
+-----------------------------------------------------------------
+TOTAL                    23      0     10      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 100.00%
+
+--- Analysis Finished ---
+Process completed. Final test code is available in the output directory.
+PS C:\thesis> & C:/Users/88015/AppData/Local/Microsoft/WindowsApps/python3.12.exe c:/thesis/mutation_analyzer.py
+--- Starting Mutation Analysis Workflow ---
+
+--- Step 1: Reading and Preparing Source File: C:\thesis\example_input.py ---
+[INFO] Code saved to: mutation_output\source_to_mutate.py
+[INFO] Source code copied to mutation_output\source_to_mutate.py for mutation.
+
+--- Step 2: Generating initial test cases ---
+[INFO] Calling Gemini API (Temperature: 0.2)...
+[INFO] Gemini API call successful.
+[INFO] Code saved to: mutation_output\test_generated_mutants.py
+[INFO] Saved initial test cases to: mutation_output\test_generated_mutants.py
+
+--- Step 3: Running mutation testing (Attempt 1/30) ---
+[INFO] Running MutPy for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] Tests failed:
+   - fail in test_generated_mutants.py::test_closest_integer_empty_string - ValueError: could not convert string to float: ''
+
+
+
+[INFO] Test failures detected. Attempting to fix...
+[INFO] Running single test to get execution trace: test_closest_integer_empty_string
+[INFO] Calling Gemini API (Temperature: 0.2)...
+[INFO] Gemini API call successful.
+[INFO] Surgically replacing function: test_closest_integer_empty_string
+[INFO] Code saved to: mutation_output\test_generated_mutants.py
+
+--- Step 3: Running mutation testing (Attempt 2/30) ---
+[INFO] Running MutPy for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 35 tests passed:
+   - test_generated_mutants [0.14841 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOD source_to_mutate: [0.18638 s] killed by test_generated_mutants.py::test_closest_integer_positive_float_trailing_zeros
+   - [#   2] AOD source_to_mutate: [0.09320 s] killed by test_generated_mutants.py::test_closest_integer_positive_float_trailing_zeros
+   - [#   3] AOD source_to_mutate: [0.08667 s] killed by test_generated_mutants.py::test_closest_integer_negative_half_round_down
+   - [#   4] AOR source_to_mutate: [0.09157 s] killed by test_generated_mutants.py::test_closest_integer_positive_float_trailing_zeros
+   - [#   5] AOR source_to_mutate: [0.08758 s] killed by test_generated_mutants.py::test_closest_integer_positive_float_trailing_zeros
+   - [#   6] AOR source_to_mutate: [0.09022 s] killed by test_generated_mutants.py::test_closest_integer_negative_half_round_down
+   - [#   7] COI source_to_mutate: [0.08574 s] killed by test_generated_mutants.py::test_closest_integer_positive_integer
+   - [#   8] COI source_to_mutate: [0.08742 s] killed by test_generated_mutants.py::test_closest_integer_positive_float_round_down
+   - [#   9] COI source_to_mutate: [0.08484 s] killed by test_generated_mutants.py::test_closest_integer_positive_float_round_down
+   - [#  10] COI source_to_mutate: [0.08009 s] killed by test_generated_mutants.py::test_closest_integer_positive_half_round_up
+   - [#  11] COI source_to_mutate: [0.08847 s] killed by test_generated_mutants.py::test_closest_integer_positive_integer
+   - [#  12] ROR source_to_mutate: [0.08528 s] killed by test_generated_mutants.py::test_closest_integer_positive_integer
+   - [#  13] ROR source_to_mutate: [0.08176 s] killed by test_generated_mutants.py::test_closest_integer_positive_float_round_down
+   - [#  14] ROR source_to_mutate: [0.08654 s] killed by test_generated_mutants.py::test_closest_integer_positive_float_round_down
+   - [#  15] ROR source_to_mutate: [0.07998 s] killed by test_generated_mutants.py::test_closest_integer_positive_half_round_up
+   - [#  16] ROR source_to_mutate: [0.09867 s] survived
+   - [#  17] ROR source_to_mutate: [0.08431 s] killed by test_generated_mutants.py::test_closest_integer_positive_integer
+   - [#  18] ROR source_to_mutate: [0.10332 s] survived
+   - [#  19] SIR source_to_mutate: [0.00000 s] incompetent
+   - [#  20] SIR source_to_mutate: [0.00000 s] incompetent
+[*] Mutation score [1.88598 s]: 88.9%
+   - all: 20
+   - killed: 16 (80.0%)
+   - survived: 2 (10.0%)
+   - incompetent: 2 (10.0%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      14      1     10      1    92%   35
+-----------------------------------------------------------------
+TOTAL                    14      1     10      1    92%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 92%
+[INFO] Mutation Score: 88.90%

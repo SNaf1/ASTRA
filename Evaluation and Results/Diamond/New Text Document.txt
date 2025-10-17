@@ -1,0 +1,63 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 8 tests passed:
+   - test_generated_mutants [0.19701 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOD source_to_mutate: [0.24312 s] killed by test_generated_mutants.py::test_rows_A
+   - [#   2] AOD source_to_mutate: [0.16443 s] killed by test_generated_mutants.py::test_rows_A
+   - [#   3] AOR source_to_mutate: [0.15994 s] killed by test_generated_mutants.py::test_rows_A
+   - [#   4] AOR source_to_mutate: [0.15791 s] incompetent
+   - [#   5] AOR source_to_mutate: [0.15310 s] killed by test_generated_mutants.py::test_rows_A
+   - [#   6] AOR source_to_mutate: [0.16488 s] killed by test_generated_mutants.py::test_rows_A
+   - [#   7] AOR source_to_mutate: [0.16998 s] killed by test_generated_mutants.py::test_rows_A
+   - [#   8] AOR source_to_mutate: [0.23794 s] incompetent
+   - [#   9] AOR source_to_mutate: [0.15094 s] killed by test_generated_mutants.py::test_rows_A
+   - [#  10] AOR source_to_mutate: [0.15344 s] killed by test_generated_mutants.py::test_rows_A
+   - [#  11] AOR source_to_mutate: [0.15342 s] incompetent
+   - [#  12] AOR source_to_mutate: [0.15444 s] incompetent
+   - [#  13] AOR source_to_mutate: [0.15041 s] incompetent
+   - [#  14] AOR source_to_mutate: [0.16731 s] killed by test_generated_mutants.py::test_rows_A
+   - [#  15] AOR source_to_mutate: [0.15371 s] killed by test_generated_mutants.py::test_rows_B
+   - [#  16] AOR source_to_mutate: [0.16958 s] killed by test_generated_mutants.py::test_rows_A
+   - [#  17] AOR source_to_mutate: [0.16484 s] killed by test_generated_mutants.py::test_rows_A
+   - [#  18] AOR source_to_mutate: [0.15160 s] killed by test_generated_mutants.py::test_rows_B
+   - [#  19] AOR source_to_mutate: [0.15971 s] killed by test_generated_mutants.py::test_rows_A
+   - [#  20] CRP source_to_mutate: [0.15088 s] killed by test_generated_mutants.py::test_rows_A
+   - [#  21] CRP source_to_mutate: [0.16378 s] killed by test_generated_mutants.py::test_rows_A
+   - [#  22] CRP source_to_mutate: [0.15359 s] killed by test_generated_mutants.py::test_rows_A
+   - [#  23] CRP source_to_mutate: [0.15524 s] killed by test_generated_mutants.py::test_rows_B
+   - [#  24] CRP source_to_mutate: [0.15501 s] killed by test_generated_mutants.py::test_rows_C
+   - [#  25] CRP source_to_mutate: [0.16037 s] killed by test_generated_mutants.py::test_rows_B
+   - [#  26] CRP source_to_mutate: [0.16096 s] killed by test_generated_mutants.py::test_rows_B
+   - [#  27] CRP source_to_mutate: [0.17097 s] killed by test_generated_mutants.py::test_rows_B
+   - [#  28] CRP source_to_mutate: [0.15180 s] killed by test_generated_mutants.py::test_rows_B
+   - [#  29] CRP source_to_mutate: [0.15049 s] killed by test_generated_mutants.py::test_rows_B
+   - [#  30] CRP source_to_mutate: [0.17292 s] killed by test_generated_mutants.py::test_rows_A
+   - [#  31] CRP source_to_mutate: [0.19340 s] killed by test_generated_mutants.py::test_rows_B
+   - [#  32] SIR source_to_mutate: [0.17716 s] killed by test_generated_mutants.py::test_rows_A
+   - [#  33] SIR source_to_mutate: [0.17602 s] killed by test_generated_mutants.py::test_rows_A
+[*] Mutation score [5.79746 s]: 100.0%
+   - all: 33
+   - killed: 28 (84.8%)
+   - survived: 0 (0.0%)
+   - incompetent: 5 (15.2%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      13      0      2      0   100%
+-----------------------------------------------------------------
+TOTAL                    13      0      2      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 100.00%

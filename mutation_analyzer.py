@@ -5,8 +5,8 @@ import sys
 import re
 
 # --- Configuration --- #
-# Gemini API Key (Replace with your own API key or use environment variables for production)
-GEMINI_API_KEY = ""
+# Gemini API Key - Set as environment variable for security
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 OUTPUT_DIR = "mutation_output"
 SOURCE_TO_MUTATE_FILENAME = "source_to_mutate.py" 
@@ -17,15 +17,11 @@ TRACE_FILENAME = "execution_trace.py"
 MAX_RETRY_ATTEMPTS = 40
 
 PROMPT_GENERATE_TESTS = """
-# --- PASTE YOUR TEST GENERATION PROMPT HERE ---
-# This prompt should instruct the LLM on how to generate tests.
-# It must include placeholders for {source_code} and {source_to_mutate_filename}.
+Insert your test generation prompt here.
 """
 
 PROMPT_FIX_TESTS = """
-# --- PASTE YOUR TEST FIXING PROMPT HERE ---
-# This prompt should instruct the LLM on how to fix a failing test.
-# It must include placeholders for {failing_test_name}, {source_code}, {test_code}, {error_output}, {execution_trace}, and {attempt_context}.
+Insert your test fixing prompt here.
 """
 
 # --- Helper Functions --- #
@@ -371,8 +367,31 @@ def generate_and_test_with_retry(input_file):
 
         failing_test_name = get_failing_test_name(output)
         if not failing_test_name:
-            print("[ERROR] Could not extract failing test name from output. Cannot proceed with fix.")
-            continue
+            # Check if this is an import-time error (no specific test failed)
+            if "TypeError" in output or "NameError" in output or "AttributeError" in output:
+                print("[WARN] Import-time error detected. Regenerating entire test file...")
+                
+                # Regenerate the entire test file with error context
+                regeneration_prompt = PROMPT_GENERATE_TESTS + f"\n\n**CRITICAL: Your previous test generation caused this error during import:**\n{output}\n\nAnalyze this error carefully and generate tests that avoid this issue. Make sure all test inputs are compatible with the function's operations."
+                
+                new_test_code = call_gemini_api(
+                    regeneration_prompt,
+                    temperature=0.3,
+                    source_code=full_source_code,
+                    source_to_mutate_filename=SOURCE_TO_MUTATE_FILENAME.replace('.py', '')
+                )
+                
+                if new_test_code and "Error:" not in new_test_code:
+                    current_test_code = new_test_code
+                    save_code_to_file(current_test_code, test_filepath)
+                    print("[INFO] Regenerated test file to fix import-time error.")
+                    continue
+                else:
+                    print("[ERROR] Failed to regenerate test file.")
+                    continue
+            else:
+                print("[ERROR] Could not extract failing test name from output. Cannot proceed with fix.")
+                continue
 
         if failing_test_name not in failed_attempts:
             failed_attempts[failing_test_name] = []

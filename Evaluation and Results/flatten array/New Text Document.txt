@@ -1,0 +1,39 @@
+[*] Start mutation process:
+   - targets: source_to_mutate
+   - tests: test_generated_mutants
+[*] 27 tests passed:
+   - test_generated_mutants [0.24927 s]
+[*] Start mutants generation and execution:
+   - [#   1] ASR source_to_mutate: [0.25466 s] incompetent
+   - [#   2] COD source_to_mutate: [0.17958 s] killed by test_generated_mutants.py::test_flatten_nested_list
+   - [#   3] COI source_to_mutate: [0.17005 s] incompetent
+   - [#   4] COI source_to_mutate: [0.19042 s] killed by test_generated_mutants.py::test_flatten_single_level_list
+   - [#   5] EHD source_to_mutate: [0.17990 s] incompetent
+   - [#   6] EXS source_to_mutate: [0.18207 s] killed by test_generated_mutants.py::test_is_iterable_int
+   - [#   7] LCR source_to_mutate: [0.20610 s] incompetent
+[*] Mutation score [1.67632 s]: 100.0%
+   - all: 7
+   - killed: 3 (42.9%)
+   - survived: 0 (0.0%)
+   - incompetent: 4 (57.1%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      14      0      6      0   100%
+-----------------------------------------------------------------
+TOTAL                    14      0      6      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 100.00%
+
+--- Analysis Finished ---

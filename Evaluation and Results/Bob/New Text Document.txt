@@ -1,0 +1,43 @@
+[*] Start mutants generation and execution:
+   - [#   1] COI source_to_mutate: [0.25027 s] killed by test_generated_mutants.py::test_silence
+   - [#   2] COI source_to_mutate: [0.16500 s] killed by test_generated_mutants.py::test_question
+   - [#   3] COI source_to_mutate: [0.16746 s] killed by test_generated_mutants.py::test_shouting
+   - [#   4] COI source_to_mutate: [0.20409 s] killed by test_generated_mutants.py::test_question
+   - [#   5] CRP source_to_mutate: [0.16173 s] killed by test_generated_mutants.py::test_silence
+   - [#   6] CRP source_to_mutate: [0.16442 s] killed by test_generated_mutants.py::test_silence
+   - [#   7] CRP source_to_mutate: [0.19522 s] killed by test_generated_mutants.py::test_shouting
+   - [#   8] CRP source_to_mutate: [0.15788 s] killed by test_generated_mutants.py::test_shouting
+   - [#   9] CRP source_to_mutate: [0.16463 s] killed by test_generated_mutants.py::test_shouting_not_question
+   - [#  10] CRP source_to_mutate: [0.16837 s] killed by test_generated_mutants.py::test_shouting_not_question
+   - [#  11] CRP source_to_mutate: [0.15867 s] killed by test_generated_mutants.py::test_question
+   - [#  12] CRP source_to_mutate: [0.17302 s] killed by test_generated_mutants.py::test_question
+   - [#  13] CRP source_to_mutate: [0.17499 s] killed by test_generated_mutants.py::test_whatever
+   - [#  14] CRP source_to_mutate: [0.17064 s] killed by test_generated_mutants.py::test_whatever
+   - [#  15] CRP source_to_mutate: [0.16032 s] killed by test_generated_mutants.py::test_silence
+   - [#  16] CRP source_to_mutate: [0.16618 s] killed by test_generated_mutants.py::test_question
+   - [#  17] CRP source_to_mutate: [0.17453 s] killed by test_generated_mutants.py::test_shouting_not_question
+   - [#  18] ROR source_to_mutate: [0.19408 s] killed by test_generated_mutants.py::test_silence
+[*] Mutation score [3.48209 s]: 100.0%
+   - all: 18
+   - killed: 18 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+
+
+
+[SUCCESS] Initial tests passed. Now calculating coverage and mutation score.
+
+--- Step 4: Calculating test coverage ---
+[INFO] Running coverage for target: mutation_output\source_to_mutate.py, tests: mutation_output\test_generated_mutants.py
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+source_to_mutate.py      17      0      8      0   100%
+-----------------------------------------------------------------
+TOTAL                    17      0      8      0   100%
+
+
+
+--- Step 5: Final Results ---
+[INFO] Test Coverage: 100%
+[INFO] Mutation Score: 100.00%
